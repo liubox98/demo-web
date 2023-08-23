@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page {
+  background: #fff;
+  padding-bottom: 120rpx;
+}
+/* 01. 轮播区 */
+.swiper-area {
+  height: 66vh;
+  top: 0;
+  z-index: -1;
+}
+/* 02. 商品数据区 */
+.goods-area {
+  margin-top: 66vh;
+}
+.goods-area .price-box {
+  display: flex;
+  align-items: baseline;
+}
+.goods-area .title {
+  color: #303133;
+  height: 46rpx;
+  line-height: 46rpx;
+}
+/* 07. 操作区 */
+.oper-area {
+  left: 0;
+  bottom: 0;
+  background: rgba(245, 245, 245, 0.95);
+  box-shadow: 0 0 20rpx 0 #f0f0f0;
+  height: 100rpx;
+  z-index: 95;
+}
+.oper-area .btn-area {
+  color: #000;
+  width: 96rpx;
+  margin-right: 30rpx;
+  text-align: center;
+}
+.oper-area .btn-area .iconfont {
+  font-size: 40rpx;
+  line-height: 48rpx;
+  margin-right: 6rpx;
+}
+

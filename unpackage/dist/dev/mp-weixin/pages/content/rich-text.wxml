@@ -1,0 +1,1 @@
+<view><rich-text class="pro-detail" nodes="{{content}}"></rich-text></view>

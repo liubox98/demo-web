@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.use-popup {
+  z-index: 10010;
+}
+.use-popup-content {
+  z-index: 10020;
+  transition: all 0.25s ease-in-out;
+}
+.use-popup-top {
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.use-popup-right {
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.use-popup-bottom {
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.use-popup-left {
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.use-popup-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 99999;
+}
+.use-mode-center-box {
+  min-width: 100rpx;
+  min-height: 100rpx;
+}
+.use-popup-content-visible.use-popup-center {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+.use-animation-zoom {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+.use-popup-content-visible {
+  -webkit-transform: translate3D(0px, 0px, 0px) !important;
+          transform: translate3D(0px, 0px, 0px) !important;
+}
+

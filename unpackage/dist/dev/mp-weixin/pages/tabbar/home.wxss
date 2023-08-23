@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 轮播图区 */
+.swiper-area .swiper {
+  height: 240rpx;
+}
+/* 分类区 */
+.category-area {
+  padding: 60rpx 0 30rpx 0;
+}
+.category-area .category-item {
+  font-size: 26rpx;
+  color: #303133;
+  width: 25%;
+}
+.category-area image {
+  width: 96rpx;
+  height: 96rpx;
+}
+/* 限时精选区 */
+.limit-area {
+  min-height: 240rpx;
+}
+.limit-area .item {
+  width: 240rpx;
+}
+.limit-area .item image {
+  width: 240rpx;
+  height: 240rpx;
+}
+

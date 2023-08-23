@@ -1,0 +1,1 @@
+<view data-event-opts="{{[['tap',[['totop',['$event']]]]]}}" class="{{['use-totop','fixed-top','animated',visible?'fade-in':'dn']}}" style="{{'bottom:'+(bottom+'rpx')+';'+('right:'+(right+'rpx')+';')}}" catchtap="__e"><text class="iconfont iconzhiding"></text></view>

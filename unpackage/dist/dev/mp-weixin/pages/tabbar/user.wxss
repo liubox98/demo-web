@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page {
+  min-height: 100%;
+  background: #f5f5f5;
+}
+.member-area image {
+  width: 130rpx;
+  height: 130rpx;
+  border: 5rpx solid #fff;
+}
+.vip-card-area {
+  color: #f7d680;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+}
+.stats-area .item {
+  padding: 30rpx 0;
+}
+.stats-area .num {
+  font-size: 32rpx;
+  color: #303133;
+  margin-bottom: 6rpx;
+}
+.order-area .iconfont {
+  position: relative;
+  font-size: 40rpx;
+}
+.order-area .iconfont .badge {
+  right: initial;
+}
+.stats-area .item,
+.order-area .item {
+  position: relative;
+  font-size: 24rpx;
+  color: #75787d;
+  flex: 1;
+}
+.browsing-area image {
+  width: 160rpx;
+  height: 160rpx;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+  display: none;
+}
+.log-out-btn {
+  color: #75787d;
+}
+

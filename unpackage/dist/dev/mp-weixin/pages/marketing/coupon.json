@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "领券中心",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "use-empty": "/components/use-empty/use-empty",
+    "use-loadmore": "/components/use-loadmore/use-loadmore"
+  }
+}

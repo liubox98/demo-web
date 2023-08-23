@@ -1,0 +1,1 @@
+<view class="use-loadmore padding-tb-sm dflex-c"><block wx:if="{{type!=='nomore'}}"><view class="iconfont iconxiangqing animated rotate margin-right-sm ft-base"></view></block><text class="ft-dark">{{tip||defaults[type]}}</text></view>

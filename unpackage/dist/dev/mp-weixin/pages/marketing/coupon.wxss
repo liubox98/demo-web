@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page {
+  background: #f5f5f5;
+}
+.coupon-area {
+  position: relative;
+}
+.coupon-area .left {
+  background-color: #ff6a6c;
+  color: #fff;
+  width: 30%;
+}
+.coupon-area .left .price {
+  color: #fff !important;
+}
+.coupon-area .right {
+  margin-left: 30%;
+}
+.coupon-area .discount {
+  font-weight: 580;
+}
+.coupon-area .discount::after {
+  content: '折';
+  font-size: 24rpx;
+  margin-left: 6rpx;
+}
+.coupon-area .border-line {
+  border-bottom: 1px dotted #ededed;
+}
+

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "全部订单",
+  "usingComponents": {
+    "use-empty": "/components/use-empty/use-empty",
+    "use-loadmore": "/components/use-loadmore/use-loadmore"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "写笔记",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#f5f5f5",
+  "usingComponents": {
+    "use-upload": "/components/use-upload/use-upload",
+    "use-copyright": "/components/use-copyright/use-copyright"
+  }
+}

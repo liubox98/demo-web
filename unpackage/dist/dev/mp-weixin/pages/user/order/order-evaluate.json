@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "订单评价",
+  "usingComponents": {
+    "use-rate": "/components/use-rate/use-rate",
+    "use-upload": "/components/use-upload/use-upload",
+    "use-copyright": "/components/use-copyright/use-copyright"
+  }
+}

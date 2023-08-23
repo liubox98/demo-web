@@ -1,0 +1,6 @@
+
+.use-qrcode {
+}
+.use-qrcode-canvas { position: fixed; top: -100vh; left: -100vw; z-index: -1;
+}
+

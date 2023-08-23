@@ -1,0 +1,87 @@
+{
+  "pages": [
+    "pages/tabbar/home",
+    "pages/tabbar/category",
+    "pages/tabbar/shopping",
+    "pages/tabbar/cart",
+    "pages/tabbar/user",
+    "pages/home/search/search",
+    "pages/login/login",
+    "pages/login/register",
+    "pages/login/forgot-password",
+    "pages/goods/goods",
+    "pages/goods/goods-list",
+    "pages/goods/goods-evaluate",
+    "pages/user/address/address-edit",
+    "pages/user/address/address",
+    "pages/user/order/order",
+    "pages/user/order/order-detail",
+    "pages/user/order/order-refund",
+    "pages/user/order/order-express",
+    "pages/user/order/order-evaluate",
+    "pages/user/collect/collect",
+    "pages/user/browsing/browsing",
+    "pages/user/setting/setting",
+    "pages/user/setting/personal",
+    "pages/user/coupon/coupon",
+    "pages/user/integral/sign",
+    "pages/user/integral/detail",
+    "pages/order/create",
+    "pages/pay/pay",
+    "pages/pay/success",
+    "pages/content/web",
+    "pages/content/rich-text",
+    "pages/marketing/coupon",
+    "pages/shopping/user",
+    "pages/shopping/note",
+    "pages/shopping/follow",
+    "pages/shopping/fans",
+    "pages/shopping/detail"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "用云电商",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#fff"
+  },
+  "tabBar": {
+    "color": "#C0C4CC",
+    "selectedColor": "#ff6a6c",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/tabbar/home",
+        "iconPath": "static/images/tabbar/home.png",
+        "selectedIconPath": "static/images/tabbar/home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/tabbar/category",
+        "iconPath": "static/images/tabbar/category.png",
+        "selectedIconPath": "static/images/tabbar/category-active.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/tabbar/shopping",
+        "iconPath": "static/images/tabbar/shopping.png",
+        "selectedIconPath": "static/images/tabbar/shopping-active.png",
+        "text": "购物圈"
+      },
+      {
+        "pagePath": "pages/tabbar/cart",
+        "iconPath": "static/images/tabbar/cart.png",
+        "selectedIconPath": "static/images/tabbar/cart-active.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/tabbar/user",
+        "iconPath": "static/images/tabbar/user.png",
+        "selectedIconPath": "static/images/tabbar/user-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
