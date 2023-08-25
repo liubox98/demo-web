@@ -92,7 +92,7 @@ module.exports = class MemberController extends Controller {
 				password,
 				needPermission: true
 			})
-			console.log(res);
+			console.log('login data', res);
 			
 			if (!(res && res.uid)) {
 				response.msg = '账号密码不存在';

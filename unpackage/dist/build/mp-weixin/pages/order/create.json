@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "创建订单",
+  "usingComponents": {
+    "use-list-title": "/components/use-list-title/use-list-title",
+    "use-number-box": "/components/use-number-box/use-number-box",
+    "use-popup": "/components/use-popup/use-popup"
+  }
+}

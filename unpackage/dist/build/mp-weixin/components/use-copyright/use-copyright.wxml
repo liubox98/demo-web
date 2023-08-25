@@ -1,0 +1,1 @@
+<view><view data-event-opts="{{[['tap',[['to',['$event']]]]]}}" class="use-copyright dflex-c padding-lr w-full" bindtap="__e"><view class="iconfont iconxiangqing animated rotate margin-right-sm ft-base"></view><view class="ft-dark">用云</view><text class="margin-lr-xs">·</text><text>让开发更简单</text></view></view>

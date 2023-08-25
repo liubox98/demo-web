@@ -1,0 +1,2 @@
+page{background-color:#f5f5f5}.active{color:#ff6a6c;font-weight:700;font-size:34rpx}.goodsContent{width:100%;display:flex;justify-content:center}.goodsContent .ft-dark{color:#585858}.goodsLeftList,
+.goodsRightList{width:50%;overflow:hidden}.goodsLeftList{margin-right:10rpx}.goodsRightList{margin-left:10rpx}

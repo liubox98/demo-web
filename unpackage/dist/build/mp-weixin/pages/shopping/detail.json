@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "详情",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "use-totop": "/components/use-totop/use-totop"
+  }
+}

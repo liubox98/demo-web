@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "添加收货人",
+  "usingComponents": {
+    "use-address": "/components/use-address/use-address"
+  }
+}

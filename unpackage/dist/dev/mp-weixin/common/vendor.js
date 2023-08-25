@@ -103,9 +103,9 @@ module.exports = _defineProperty, module.exports.__esModule = true, module.expor
 /***/ }),
 
 /***/ 129:
-/*!****************************************************************************************!*\
-  !*** C:/Users/liubo1/Documents/HBuilderProjects/用云电商 uniCloud 版前后端开源/common/poster.js ***!
-  \****************************************************************************************/
+/*!**************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/common/poster.js ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -920,7 +920,7 @@ var b = "development" === "development",
         "10.10.20.11"
     ],
     "debugPort": 9000,
-    "initialLaunchType": "local",
+    "initialLaunchType": "remote",
     "servePort": 7000,
     "skipFiles": [
         "<node_internals>/**",
@@ -15058,9 +15058,9 @@ module.exports = _isNativeFunction, module.exports.__esModule = true, module.exp
 /***/ }),
 
 /***/ 36:
-/*!***************************************************************************************************************!*\
-  !*** C:/Users/liubo1/Documents/HBuilderProjects/用云电商 uniCloud 版前后端开源/pages.json?{"type":"origin-pages-json"} ***!
-  \***************************************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/pages.json?{"type":"origin-pages-json"} ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15075,7 +15075,7 @@ var _default = {
   "pages": [{
     "path": "pages/tabbar/home",
     "style": {
-      "navigationBarTitleText": "用云电商",
+      "navigationBarTitleText": "蜗牛俱乐部",
       "enablePullDownRefresh": true
     }
   }, {
@@ -15330,9 +15330,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 37:
-/*!**************************************************************************************************!*\
-  !*** C:/Users/liubo1/Documents/HBuilderProjects/用云电商 uniCloud 版前后端开源/pages.json?{"type":"stat"} ***!
-  \**************************************************************************************************/
+/*!************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/pages.json?{"type":"stat"} ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15351,9 +15351,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 38:
-/*!**********************************************************************************!*\
-  !*** C:/Users/liubo1/Documents/HBuilderProjects/用云电商 uniCloud 版前后端开源/pages.json ***!
-  \**********************************************************************************/
+/*!********************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/pages.json ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -17770,9 +17770,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 419:
-/*!*******************************************************************************************************!*\
-  !*** C:/Users/liubo1/Documents/HBuilderProjects/用云电商 uniCloud 版前后端开源/components/use-qrcode/qrcode.js ***!
-  \*******************************************************************************************************/
+/*!*****************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/components/use-qrcode/qrcode.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20038,9 +20038,9 @@ module.exports = index_cjs;
 /***/ }),
 
 /***/ 434:
-/*!*********************************************************************************************************************************!*\
-  !*** C:/Users/liubo1/Documents/HBuilderProjects/用云电商 uniCloud 版前后端开源/uni_modules/lime-painter/components/lime-painter/utils.js ***!
-  \*********************************************************************************************************************************/
+/*!*******************************************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/utils.js ***!
+  \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20256,9 +20256,9 @@ function getImageInfo(img, isH5PathToBase64) {
 /***/ }),
 
 /***/ 435:
-/*!********************************************************************************************************************************!*\
-  !*** C:/Users/liubo1/Documents/HBuilderProjects/用云电商 uniCloud 版前后端开源/uni_modules/lime-painter/components/lime-painter/draw.js ***!
-  \********************************************************************************************************************************/
+/*!******************************************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/draw.js ***!
+  \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21164,9 +21164,9 @@ exports.Draw = Draw;
 /***/ }),
 
 /***/ 436:
-/*!************************************************************************************************************************************!*\
-  !*** C:/Users/liubo1/Documents/HBuilderProjects/用云电商 uniCloud 版前后端开源/uni_modules/lime-painter/components/lime-painter/gradient.js ***!
-  \************************************************************************************************************************************/
+/*!**********************************************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/gradient.js ***!
+  \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21293,9 +21293,9 @@ function linearEffect(width, height, bg, ctx) {
 /***/ }),
 
 /***/ 437:
-/*!**********************************************************************************************************************************!*\
-  !*** C:/Users/liubo1/Documents/HBuilderProjects/用云电商 uniCloud 版前后端开源/uni_modules/lime-painter/components/lime-painter/qrcode.js ***!
-  \**********************************************************************************************************************************/
+/*!********************************************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/qrcode.js ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -21304,9 +21304,9 @@ function linearEffect(width, height, bg, ctx) {
 /***/ }),
 
 /***/ 438:
-/*!**********************************************************************************************************************************!*\
-  !*** C:/Users/liubo1/Documents/HBuilderProjects/用云电商 uniCloud 版前后端开源/uni_modules/lime-painter/components/lime-painter/layout.js ***!
-  \**********************************************************************************************************************************/
+/*!********************************************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/layout.js ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21898,9 +21898,9 @@ exports.Layout = Layout;
 /***/ }),
 
 /***/ 439:
-/*!**********************************************************************************************************************************!*\
-  !*** C:/Users/liubo1/Documents/HBuilderProjects/用云电商 uniCloud 版前后端开源/uni_modules/lime-painter/components/lime-painter/canvas.js ***!
-  \**********************************************************************************************************************************/
+/*!********************************************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/canvas.js ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21978,9 +21978,9 @@ function adaptor(ctx) {
 /***/ }),
 
 /***/ 445:
-/*!********************************************************************************************************************!*\
-  !*** C:/Users/liubo1/Documents/HBuilderProjects/用云电商 uniCloud 版前后端开源/components/use-address/city-data/province.js ***!
-  \********************************************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/components/use-address/city-data/province.js ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22104,9 +22104,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 446:
-/*!****************************************************************************************************************!*\
-  !*** C:/Users/liubo1/Documents/HBuilderProjects/用云电商 uniCloud 版前后端开源/components/use-address/city-data/city.js ***!
-  \****************************************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/components/use-address/city-data/city.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23229,9 +23229,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 447:
-/*!****************************************************************************************************************!*\
-  !*** C:/Users/liubo1/Documents/HBuilderProjects/用云电商 uniCloud 版前后端开源/components/use-address/city-data/area.js ***!
-  \****************************************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/components/use-address/city-data/area.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -32484,9 +32484,9 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 46:
-/*!****************************************************************************************!*\
-  !*** C:/Users/liubo1/Documents/HBuilderProjects/用云电商 uniCloud 版前后端开源/common/config.js ***!
-  \****************************************************************************************/
+/*!**************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/common/config.js ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -32529,9 +32529,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 47:
-/*!****************************************************************************************!*\
-  !*** C:/Users/liubo1/Documents/HBuilderProjects/用云电商 uniCloud 版前后端开源/common/common.js ***!
-  \****************************************************************************************/
+/*!**************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/common/common.js ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -32974,9 +32974,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 48:
-/*!************************************************************************************!*\
-  !*** C:/Users/liubo1/Documents/HBuilderProjects/用云电商 uniCloud 版前后端开源/common/db.js ***!
-  \************************************************************************************/
+/*!**********************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/common/db.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33330,9 +33330,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 49:
-/*!**************************************************************************************!*\
-  !*** C:/Users/liubo1/Documents/HBuilderProjects/用云电商 uniCloud 版前后端开源/common/func.js ***!
-  \**************************************************************************************/
+/*!************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/common/func.js ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33428,9 +33428,9 @@ module.exports = _interopRequireDefault, module.exports.__esModule = true, modul
 /***/ }),
 
 /***/ 50:
-/*!***************************************************************************************!*\
-  !*** C:/Users/liubo1/Documents/HBuilderProjects/用云电商 uniCloud 版前后端开源/common/store.js ***!
-  \***************************************************************************************/
+/*!*************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/common/store.js ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

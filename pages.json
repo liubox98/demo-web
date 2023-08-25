@@ -2,7 +2,7 @@
 	"pages": [{
 			"path": "pages/tabbar/home",
 			"style": {
-				"navigationBarTitleText": "用云电商",
+				"navigationBarTitleText": "蜗牛俱乐部",
 				"enablePullDownRefresh": true
 			}
 		}, {

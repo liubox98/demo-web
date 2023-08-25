@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "用云电商",
+  "navigationBarTitleText": "蜗牛俱乐部",
   "enablePullDownRefresh": true,
   "usingComponents": {
     "use-header": "/components/use-header/use-header",

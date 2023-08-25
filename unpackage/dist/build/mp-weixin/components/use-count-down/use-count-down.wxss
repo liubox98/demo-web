@@ -1,0 +1,1 @@
+.use-count-down-item{padding:2rpx;border-radius:6rpx;white-space:nowrap;-webkit-transform:translateZ(0);transform:translateZ(0)}.use-count-down-colon{padding:0 5rpx;line-height:1;padding-bottom:4rpx}.use-count-down-scale{-webkit-transform:scale(.9);transform:scale(.9);-webkit-transform-origin:center center;transform-origin:center center}

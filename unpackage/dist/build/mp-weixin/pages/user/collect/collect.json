@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "我的收藏",
+  "usingComponents": {
+    "use-empty": "/components/use-empty/use-empty",
+    "use-loadmore": "/components/use-loadmore/use-loadmore",
+    "use-totop": "/components/use-totop/use-totop"
+  }
+}

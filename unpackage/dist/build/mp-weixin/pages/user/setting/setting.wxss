@@ -1,0 +1,1 @@
+page{background:#f5f5f5}.use-item{height:100rpx;line-height:100rpx;position:relative;background:#fff}.use-item switch{-webkit-transform:translateX(16rpx) scale(.84);transform:translateX(16rpx) scale(.84)}.use-item button{line-height:100rpx;background:#fff;font-size:15px}

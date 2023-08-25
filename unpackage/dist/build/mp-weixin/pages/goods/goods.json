@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "商品详情",
+  "usingComponents": {
+    "use-popup": "/components/use-popup/use-popup",
+    "use-qrcode": "/components/use-qrcode/use-qrcode",
+    "use-list-title": "/components/use-list-title/use-list-title",
+    "use-rate": "/components/use-rate/use-rate",
+    "use-totop": "/components/use-totop/use-totop",
+    "l-painter": "/uni_modules/lime-painter/components/lime-painter/index"
+  }
+}

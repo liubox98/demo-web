@@ -1,0 +1,1 @@
+page{background:#f5f5f5}.row{background:#fff;position:relative;height:110rpx}.row .tit{flex-shrink:0;width:150rpx}.row .input{flex:1;font-size:30rpx;padding-left:0}.row .input_t{color:#333}

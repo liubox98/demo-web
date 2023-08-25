@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "物流轨迹",
+  "usingComponents": {
+    "use-empty": "/components/use-empty/use-empty",
+    "use-totop": "/components/use-totop/use-totop"
+  }
+}

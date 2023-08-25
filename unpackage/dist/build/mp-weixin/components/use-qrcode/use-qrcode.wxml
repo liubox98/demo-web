@@ -1,0 +1,1 @@
+<view class="use-qrcode"><block wx:if="{{!result}}"><canvas class="use-qrcode-canvas" style="{{'width:'+(qrsize+'px')+';'+('height:'+(qrsize+'px')+';')}}" canvas-id="{{cid}}"></canvas></block><image hidden="{{!(show)}}" style="{{'width:'+(size+'px')+';'+('height:'+(size+'px')+';')}}" src="{{result}}"></image></view>

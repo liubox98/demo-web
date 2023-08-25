@@ -24,12 +24,12 @@
 		"tokenExpiresIn": 259200,
 		"oauth": {
 			"weixin": {
-				"appid": "微信小程序appid",
-				"appsecret": "微信小程序appsecret"
+				"appid": "wxdb41a893a9156073",
+				"appsecret": "f70129ed73b8a311a4cf6f47591b07fe"
 			}
 		},
 		"pay": {
-			"appId": "微信小程序appid",
+			"appId": "wxdb41a893a9156073",
 			"mchId": "微信支付商户号",
 			"key": "微信支付商户key (API密钥)"
 		},
