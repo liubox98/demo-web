@@ -1,10 +1,10 @@
 <template>
 	<view class="container bg-drak" :class="{ 'margin-bottom-big': !empty }">
 		<!-- 00. 未授权登录 -->
-		<use-empty v-if="!islogin" e-style="round" e-type="unauthorized" tip="当前未授权" btn-tip="去登录" height="70vh"
+		<use-empty v-if="!islogin" e-style="round" e-type="unauthorized" tip="当前未授权" btn-tip="去登录""
 			:auto="false" @goto="tologin"></use-empty>
 		<!-- 00. 空白页 -->
-		<use-empty v-else-if="empty" e-style="round" e-type="cart" tip="购物车数据为空" height="70vh"></use-empty>
+		<use-empty v-else-if="empty" e-style="round" e-type="cart" tip="购物车数据为空""></use-empty>
 		<!-- 00. 列表 -->
 		<view v-else>
 			<!-- 01. 购物车列表1 -->
@@ -33,7 +33,8 @@
 							<view class="clamp-2 title" @click="togoods(item)">{{item.goods.name}}
 								{{item.goods.name_pw}}
 							</view>
-							<view class="ft-dark fs-xs padding-top-xs">{{ item.goods_sku.spec || '&nbsp;&nbsp;' }}</view>
+							<view class="ft-dark fs-xs padding-top-xs">{{ item.goods_sku.spec || '&nbsp;&nbsp;' }}
+							</view>
 							<view class="padding-tb-sm">
 								<text class="price">{{ item.goods.price / 100 }}</text>
 								<text class="m-price"
@@ -71,15 +72,15 @@
 			</view>
 		</view>
 
-		<!-- 03. 猜你喜欢 -->
-		<use-hot-goods title-type="round" title="热门推荐"></use-hot-goods>
 	</view>
 </template>
 
 <script>
 	const db = uniCloud.database();
 	const _cart = 'usemall-goods-cart'
-	import { mapState } from 'vuex';
+	import {
+		mapState
+	} from 'vuex';
 	export default {
 		computed: {
 			...mapState(['islogin'])
@@ -119,11 +120,11 @@
 		methods: {
 			//请求数据
 			async loadData(callback) {
-				
+
 				// 更改为临时表方式查询
 				const goodsTemp = db.collection('usemall-goods').getTemp();
 				const goodsSkuTemp = db.collection('usemall-goods-sku').getTemp();
-				
+
 				db.collection(_cart, goodsTemp, goodsSkuTemp)
 					.where('create_uid == $env.uid')
 					.field(
@@ -138,7 +139,7 @@
 								x.goods = x.goods[0];
 								x.goods_id = x.goods_id[0];
 								x.goods_sku = x.goods_sku[0] || {};
-								
+
 								if (x.goods && x.goods_id) _cartDatas.push(x);
 							});
 							// 购物车数据
@@ -208,8 +209,7 @@
 										_this.loadData();
 									}
 								})
-						} else if (res.cancel) {
-						}
+						} else if (res.cancel) {}
 					}
 				});
 			},
@@ -229,8 +229,7 @@
 									}
 									_this.$api.msg(res.msg)
 								})
-						} else if (res.cancel) {
-						}
+						} else if (res.cancel) {}
 					}
 				});
 			},

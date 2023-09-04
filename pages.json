@@ -203,10 +203,46 @@
 				"enablePullDownRefresh": false
 			}
 		}
-	],
+        ,{
+            "path" : "pages/tabbar/test_store",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商城",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/tabbar/test_category",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "分类",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/tabbar/test_ticket",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "故障工单",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/tabbar/test_data_query",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "用云电商",
+		"navigationBarTitleText": "蜗牛俱乐部",
 		"navigationBarBackgroundColor": "#fff",
 		"backgroundColor": "#fff",
 
@@ -227,22 +263,22 @@
 				"text": "首页"
 			},
 			{
-				"pagePath": "pages/tabbar/category",
+				"pagePath": "pages/tabbar/test_data_query",
 				"iconPath": "static/images/tabbar/category.png",
 				"selectedIconPath": "static/images/tabbar/category-active.png",
-				"text": "分类"
+				"text": "资料查询"
 			},
 			{
-				"pagePath": "pages/tabbar/shopping",
+				"pagePath": "pages/tabbar/test_ticket",
 				"iconPath": "static/images/tabbar/shopping.png",
 				"selectedIconPath": "static/images/tabbar/shopping-active.png",
-				"text": "购物圈"
+				"text": "故障工单"
 			},
 			{
-				"pagePath": "pages/tabbar/cart",
+				"pagePath": "pages/tabbar/test_store",
 				"iconPath": "static/images/tabbar/cart.png",
 				"selectedIconPath": "static/images/tabbar/cart-active.png",
-				"text": "购物车"
+				"text": "商城"
 			},
 			{
 				"pagePath": "pages/tabbar/user",

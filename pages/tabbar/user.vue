@@ -2,9 +2,11 @@
 	<view class="user-area">
 		<view class="header-area padding-lr-sm" :class="(is_mp && !is_alipay) ? 'padding-top-big' : 'padding-top'">
 			<view class="dflex-b">
-				<view class="member-area padding-top-sm margin-bottom dflex pos-r" @click="to('/pages/user/setting/personal')">
+				<view class="member-area padding-top-sm margin-bottom dflex pos-r"
+					@click="to('/pages/user/setting/personal')">
 					<view>
-						<image class="headimg border-radius-c" :src="member.member_headimg || '/static/images/user/default.png'"></image>
+						<image class="headimg border-radius-c"
+							:src="member.member_headimg || '/static/images/user/default.png'"></image>
 					</view>
 					<view class="margin-left-sm">
 						<view class="info-box">
@@ -90,6 +92,12 @@
 					</view>
 				</view>
 			</view>
+			<view class="border-radius margin-top-sm bg-main">
+				<use-list-title title="工单列表" iconfont="iconshoucang-" color="#ff6a6c" fwt="600" :tip="stats.collect"
+					@goto="to('/pages/user/collect/collect')"></use-list-title>
+				<use-list-title title="工单详情" iconfont="iconshoucang-" color="#ff6a6c" fwt="600" :tip="stats.collect"
+					@goto="to('/pages/user/collect/collect')"></use-list-title>
+			</view>
 
 			<view class="border-radius margin-top-sm bg-main">
 				<!-- 我的足迹 -->
@@ -103,13 +111,19 @@
 						</view>
 					</view>
 				</scroll-view>
+				<use-list-title title="我发表的" iconfont="iconshoucang-" color="#ff6a6c" fwt="600" :tip="stats.collect"
+					@goto="to('/pages/user/collect/collect')"></use-list-title>
+
+
+				<use-list-title title="我评论的" iconfont="iconshoucang-" color="#ff6a6c" fwt="600" :tip="stats.collect"
+					@goto="to('/pages/user/collect/collect')"></use-list-title>
 
 				<use-list-title title="我的收藏" iconfont="iconshoucang-" color="#ff6a6c" fwt="600" :tip="stats.collect"
 					@goto="to('/pages/user/collect/collect')"></use-list-title>
-				<use-list-title title="分销中心" iconfont="iconyixiaoshou" color="#ffab6c" fwt="600" tip="分享赚钱"
-					@goto="to('/pages/user/distribution/distribution')"></use-list-title>
+
 				<use-list-title title="收货人" iconfont="icondizhi-" color="#5a9ded" fwt="600"
 					@goto="to('/pages/user/address/address')"></use-list-title>
+
 				<use-list-title title="设置" iconfont="iconshezhi-" color="#58bc8a" fwt="600"
 					@goto="to('/pages/user/setting/setting')"></use-list-title>
 			</view>
@@ -134,8 +148,11 @@
 </template>
 <script>
 	const db = uniCloud.database();
-	
-	import { mapState, mapMutations } from 'vuex';
+
+	import {
+		mapState,
+		mapMutations
+	} from 'vuex';
 	const _history = 'usemall-goods-history'
 	export default {
 		computed: {
@@ -185,7 +202,7 @@
 					if (res.code == 200) {
 						this.putMember(res.datas.member);
 						console.log('member/data', res);
-						
+
 						this.stats = res.datas.stats;
 						this.stats.order_state = {};
 						this.stats.order.forEach(_order => {
@@ -196,11 +213,13 @@
 
 				// 浏览历史
 				const goodsTemp = db.collection('usemall-goods').getTemp();
-				
+
 				db.collection('usemall-goods-history', goodsTemp)
 					.where('create_uid == $env.uid')
-					.field('visit_cnt, last_modify_time, goods._id as goods_id, goods.img as goods_img, goods.state as goods_state')
-					.orderBy('last_modify_time desc') 
+					.field(
+						'visit_cnt, last_modify_time, goods._id as goods_id, goods.img as goods_img, goods.state as goods_state'
+					)
+					.orderBy('last_modify_time desc')
 					.get()
 					.then(res => {
 						if (res && res.result && res.result.errCode === 0) {
