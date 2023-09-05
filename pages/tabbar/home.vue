@@ -108,7 +108,7 @@
 			}
 
 			return {
-				title: '用云电商',
+				title: '蜗牛俱乐部',
 				path: `/pages/tabbar/home?mid=${mid}`,
 				// imageUrl: 'https://mall-os-api.use-cloud.com/files/upload/image/20200408/200408115587860242.jpg',
 				success: function(res) {

@@ -10,22 +10,24 @@
 					</view>
 					<view class="margin-left-sm">
 						<view class="info-box">
-							<text class="fs-lg">{{ member.member_name || member.member_nickname || '用云' }}</text>
+							<text v-if="islogin"
+								class="fs-lg">{{ member.member_name || member.member_nickname || '小蜗牛🐌' }}</text>
+							<text v-else>未登录</text>
 						</view>
 						<view v-if="member.member_city"><text class="fs-xxs">{{ member.member_city }}</text></view>
 					</view>
-				</view>
-				<view class="border-radius-big bg-base dflex-c padding-lr" @click="to('/pages/user/integral/sign')">
-					<view class="iconfont fs-xl iconqiandao margin-right-xs"></view>
-					<view>签到</view>
 				</view>
 			</view>
 
 			<view class="border-radius">
 				<view class="vip-card-area pos-r padding-lr padding-tb-sm">
-					<view>
+					<view v-if="islogin">
 						<text class="iconfont iconhuiyuan"></text>
-						<text class="margin-left-sm">用云电商 会员</text>
+						<text class="margin-left-sm">蜗牛俱乐部 会员</text>
+					</view>
+					<view v-else>
+						<text class="iconfont iconhuiyuan"></text>
+						<text class="margin-left-sm">登录 · 享会员好礼</text>
 					</view>
 				</view>
 
@@ -93,8 +95,6 @@
 				</view>
 			</view>
 			<view class="border-radius margin-top-sm bg-main">
-				<use-list-title title="工单列表" iconfont="iconshoucang-" color="#ff6a6c" fwt="600" :tip="stats.collect"
-					@goto="to('/pages/user/collect/collect')"></use-list-title>
 				<use-list-title title="工单详情" iconfont="iconshoucang-" color="#ff6a6c" fwt="600" :tip="stats.collect"
 					@goto="to('/pages/user/collect/collect')"></use-list-title>
 			</view>
@@ -111,9 +111,9 @@
 						</view>
 					</view>
 				</scroll-view>
-				<use-list-title title="我发表的" iconfont="iconshoucang-" color="#ff6a6c" fwt="600" :tip="stats.collect"
-					@goto="to('/pages/user/collect/collect')"></use-list-title>
 
+				<use-list-title title="我发表的" iconfonts="icon-jiluwendang" color="#ff6a6c" fwt="600" :tip="stats.collect"
+					@goto="to('/pages/user/collect/collect')"></use-list-title>
 
 				<use-list-title title="我评论的" iconfont="iconshoucang-" color="#ff6a6c" fwt="600" :tip="stats.collect"
 					@goto="to('/pages/user/collect/collect')"></use-list-title>
@@ -121,11 +121,11 @@
 				<use-list-title title="我的收藏" iconfont="iconshoucang-" color="#ff6a6c" fwt="600" :tip="stats.collect"
 					@goto="to('/pages/user/collect/collect')"></use-list-title>
 
-				<use-list-title title="收货人" iconfont="icondizhi-" color="#5a9ded" fwt="600"
+				<use-list-title title="地址" iconfont="icondizhi-" color="#5a9ded" fwt="600"
 					@goto="to('/pages/user/address/address')"></use-list-title>
-
+				<!-- 
 				<use-list-title title="设置" iconfont="iconshezhi-" color="#58bc8a" fwt="600"
-					@goto="to('/pages/user/setting/setting')"></use-list-title>
+					@goto="to('/pages/user/setting/setting')"></use-list-title> -->
 			</view>
 
 			<view v-if="islogin" class="border-radius margin-top-sm padding-sm dflex-c bg-main log-out-btn"
@@ -142,8 +142,6 @@
 				@click="actionSheetClick" @close="actionSheetClose"></use-action-sheet>
 		</view>
 
-		<!-- 用云版权 -->
-		<use-copyright></use-copyright>
 	</view>
 </template>
 <script>

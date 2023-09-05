@@ -133,16 +133,6 @@ let uposter = {
 				}
 			},
 			{
-				type: 'text',
-				text: '用云 · 让开发更简单',
-				css: {
-					color: '#fff',
-					left: '276rpx',
-					top: '1060rpx',
-					fontSize: '24rpx',
-				}
-			},
-			{
 				type: 'view',
 				css: {
 					left: '496rpx',

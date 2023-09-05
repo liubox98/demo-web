@@ -58,32 +58,27 @@
       {
         "pagePath": "pages/tabbar/home",
         "iconPath": "static/images/tabbar/home.png",
-        "selectedIconPath": "static/images/tabbar/home-active.png",
-        "text": "首页"
+        "selectedIconPath": "static/images/tabbar/home-active.png"
       },
       {
         "pagePath": "pages/tabbar/test_data_query",
         "iconPath": "static/images/tabbar/category.png",
-        "selectedIconPath": "static/images/tabbar/category-active.png",
-        "text": "资料查询"
+        "selectedIconPath": "static/images/tabbar/category-active.png"
       },
       {
         "pagePath": "pages/tabbar/test_ticket",
         "iconPath": "static/images/tabbar/shopping.png",
-        "selectedIconPath": "static/images/tabbar/shopping-active.png",
-        "text": "故障工单"
+        "selectedIconPath": "static/images/tabbar/shopping-active.png"
       },
       {
         "pagePath": "pages/tabbar/test_store",
         "iconPath": "static/images/tabbar/cart.png",
-        "selectedIconPath": "static/images/tabbar/cart-active.png",
-        "text": "商城"
+        "selectedIconPath": "static/images/tabbar/cart-active.png"
       },
       {
         "pagePath": "pages/tabbar/user",
         "iconPath": "static/images/tabbar/user.png",
-        "selectedIconPath": "static/images/tabbar/user-active.png",
-        "text": "我的"
+        "selectedIconPath": "static/images/tabbar/user-active.png"
       }
     ]
   },

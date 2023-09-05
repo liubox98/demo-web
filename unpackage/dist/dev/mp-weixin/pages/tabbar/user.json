@@ -3,7 +3,6 @@
   "navigationStyle": "custom",
   "usingComponents": {
     "use-list-title": "/components/use-list-title/use-list-title",
-    "use-action-sheet": "/components/use-action-sheet/use-action-sheet",
-    "use-copyright": "/components/use-copyright/use-copyright"
+    "use-action-sheet": "/components/use-action-sheet/use-action-sheet"
   }
 }

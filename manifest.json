@@ -1,8 +1,6 @@
 {
-    "name" : "用云电商 uniCloud 版前后端开源",
+    "name" : "uniCloud多功能平台",
     "appid" : "__UNI__DD95040",
-    "description" : "用云电商 uniCloud v1.0.9 开源版（用云 · 让开发更简单）",
-    "versionName" : "1.0.9.210804",
     "versionCode" : 109,
     "transformPx" : false,
     /* 5+App特有相关 */

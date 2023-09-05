@@ -21,7 +21,7 @@ export default {
 			default () {				
 				return {
 					more: '上拉显示更多',
-					loading: '用云 · 让开发更简单',
+					loading: '拼命加载中...',
 					nomore: '已经到底了'
 				}
 			}

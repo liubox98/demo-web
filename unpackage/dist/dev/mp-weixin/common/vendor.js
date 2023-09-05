@@ -103,9 +103,9 @@ module.exports = _defineProperty, module.exports.__esModule = true, module.expor
 /***/ }),
 
 /***/ 129:
-/*!***********************************************************!*\
-  !*** /Users/ethanliu/Documents/demo-web/common/poster.js ***!
-  \***********************************************************/
+/*!**************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/common/poster.js ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -244,15 +244,6 @@ var uposter = {
         top: '1078rpx',
         border: '1px solid #fff',
         width: '70rpx'
-      }
-    }, {
-      type: 'text',
-      text: '用云 · 让开发更简单',
-      css: {
-        color: '#fff',
-        left: '276rpx',
-        top: '1060rpx',
-        fontSize: '24rpx'
       }
     }, {
       type: 'view',
@@ -916,14 +907,15 @@ var b = "development" === "development",
   A = S({
     "address": [
         "127.0.0.1",
-        "192.168.3.41"
+        "172.21.192.1",
+        "10.10.20.11"
     ],
     "debugPort": 9000,
     "initialLaunchType": "remote",
-    "servePort": 7001,
+    "servePort": 7000,
     "skipFiles": [
         "<node_internals>/**",
-        "/Applications/HBuilderX.app/Contents/HBuilderX/plugins/unicloud/**/*.js"
+        "D:/HBuilderX/plugins/unicloud/**/*.js"
     ]
 }
 ),
@@ -13967,7 +13959,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"用云电商 uniCloud 版前后端开源","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniCloud多功能平台","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -13988,14 +13980,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"用云电商 uniCloud 版前后端开源","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniCloud多功能平台","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"用云电商 uniCloud 版前后端开源","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniCloud多功能平台","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -14091,7 +14083,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"用云电商 uniCloud 版前后端开源","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniCloud多功能平台","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -15057,9 +15049,9 @@ module.exports = _isNativeFunction, module.exports.__esModule = true, module.exp
 /***/ }),
 
 /***/ 36:
-/*!**********************************************************************************!*\
-  !*** /Users/ethanliu/Documents/demo-web/pages.json?{"type":"origin-pages-json"} ***!
-  \**********************************************************************************/
+/*!*************************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/pages.json?{"type":"origin-pages-json"} ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15315,28 +15307,23 @@ var _default = {
     "list": [{
       "pagePath": "pages/tabbar/home",
       "iconPath": "static/images/tabbar/home.png",
-      "selectedIconPath": "static/images/tabbar/home-active.png",
-      "text": "首页"
+      "selectedIconPath": "static/images/tabbar/home-active.png"
     }, {
       "pagePath": "pages/tabbar/test_data_query",
       "iconPath": "static/images/tabbar/category.png",
-      "selectedIconPath": "static/images/tabbar/category-active.png",
-      "text": "资料查询"
+      "selectedIconPath": "static/images/tabbar/category-active.png"
     }, {
       "pagePath": "pages/tabbar/test_ticket",
       "iconPath": "static/images/tabbar/shopping.png",
-      "selectedIconPath": "static/images/tabbar/shopping-active.png",
-      "text": "故障工单"
+      "selectedIconPath": "static/images/tabbar/shopping-active.png"
     }, {
       "pagePath": "pages/tabbar/test_store",
       "iconPath": "static/images/tabbar/cart.png",
-      "selectedIconPath": "static/images/tabbar/cart-active.png",
-      "text": "商城"
+      "selectedIconPath": "static/images/tabbar/cart-active.png"
     }, {
       "pagePath": "pages/tabbar/user",
       "iconPath": "static/images/tabbar/user.png",
-      "selectedIconPath": "static/images/tabbar/user-active.png",
-      "text": "我的"
+      "selectedIconPath": "static/images/tabbar/user-active.png"
     }]
   },
   "condition": {
@@ -15353,9 +15340,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 37:
-/*!*********************************************************************!*\
-  !*** /Users/ethanliu/Documents/demo-web/pages.json?{"type":"stat"} ***!
-  \*********************************************************************/
+/*!************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/pages.json?{"type":"stat"} ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15374,9 +15361,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 38:
-/*!*****************************************************!*\
-  !*** /Users/ethanliu/Documents/demo-web/pages.json ***!
-  \*****************************************************/
+/*!********************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/pages.json ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -16117,8 +16104,8 @@ function populateParameters(result) {
 
   var parameters = {
     appId: "__UNI__DD95040",
-    appName: "用云电商 uniCloud 版前后端开源",
-    appVersion: "1.0.9.210804",
+    appName: "uniCloud多功能平台",
+    appVersion: "undefined",
     appVersionCode: "109",
     appLanguage: getAppLanguage(hostLanguage),
     uniCompileVersion: "3.8.12",
@@ -16216,8 +16203,8 @@ var getAppBaseInfo = {
     var hostLanguage = language.replace('_', '-');
     result = sortObject(Object.assign(result, {
       appId: "__UNI__DD95040",
-      appName: "用云电商 uniCloud 版前后端开源",
-      appVersion: "1.0.9.210804",
+      appName: "uniCloud多功能平台",
+      appVersion: "undefined",
       appVersionCode: "109",
       appLanguage: getAppLanguage(hostLanguage),
       hostVersion: version,
@@ -16898,7 +16885,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"用云电商 uniCloud 版前后端开源","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniCloud多功能平台","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -19049,10 +19036,10 @@ module.exports = index_cjs;
 
 /***/ }),
 
-/***/ 430:
-/*!**************************************************************************!*\
-  !*** /Users/ethanliu/Documents/demo-web/components/use-qrcode/qrcode.js ***!
-  \**************************************************************************/
+/***/ 447:
+/*!*****************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/components/use-qrcode/qrcode.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20060,10 +20047,187 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 445:
-/*!****************************************************************************************************!*\
-  !*** /Users/ethanliu/Documents/demo-web/uni_modules/lime-painter/components/lime-painter/utils.js ***!
-  \****************************************************************************************************/
+/***/ 45:
+/*!**********************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js ***!
+  \**********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return normalizeComponent; });
+/* globals __VUE_SSR_CONTEXT__ */
+
+// IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
+// This module is a runtime utility for cleaner component module output and will
+// be included in the final webpack user bundle.
+
+function normalizeComponent (
+  scriptExports,
+  render,
+  staticRenderFns,
+  functionalTemplate,
+  injectStyles,
+  scopeId,
+  moduleIdentifier, /* server only */
+  shadowMode, /* vue-cli only */
+  components, // fixed by xxxxxx auto components
+  renderjs // fixed by xxxxxx renderjs
+) {
+  // Vue.extend constructor export interop
+  var options = typeof scriptExports === 'function'
+    ? scriptExports.options
+    : scriptExports
+
+  // fixed by xxxxxx auto components
+  if (components) {
+    if (!options.components) {
+      options.components = {}
+    }
+    var hasOwn = Object.prototype.hasOwnProperty
+    for (var name in components) {
+      if (hasOwn.call(components, name) && !hasOwn.call(options.components, name)) {
+        options.components[name] = components[name]
+      }
+    }
+  }
+  // fixed by xxxxxx renderjs
+  if (renderjs) {
+    if(typeof renderjs.beforeCreate === 'function'){
+			renderjs.beforeCreate = [renderjs.beforeCreate]
+		}
+    (renderjs.beforeCreate || (renderjs.beforeCreate = [])).unshift(function() {
+      this[renderjs.__module] = this
+    });
+    (options.mixins || (options.mixins = [])).push(renderjs)
+  }
+
+  // render functions
+  if (render) {
+    options.render = render
+    options.staticRenderFns = staticRenderFns
+    options._compiled = true
+  }
+
+  // functional template
+  if (functionalTemplate) {
+    options.functional = true
+  }
+
+  // scopedId
+  if (scopeId) {
+    options._scopeId = 'data-v-' + scopeId
+  }
+
+  var hook
+  if (moduleIdentifier) { // server build
+    hook = function (context) {
+      // 2.3 injection
+      context =
+        context || // cached call
+        (this.$vnode && this.$vnode.ssrContext) || // stateful
+        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
+      // 2.2 with runInNewContext: true
+      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
+        context = __VUE_SSR_CONTEXT__
+      }
+      // inject component styles
+      if (injectStyles) {
+        injectStyles.call(this, context)
+      }
+      // register component module identifier for async chunk inferrence
+      if (context && context._registeredComponents) {
+        context._registeredComponents.add(moduleIdentifier)
+      }
+    }
+    // used by ssr in case component is cached and beforeCreate
+    // never gets called
+    options._ssrRegister = hook
+  } else if (injectStyles) {
+    hook = shadowMode
+      ? function () { injectStyles.call(this, this.$root.$options.shadowRoot) }
+      : injectStyles
+  }
+
+  if (hook) {
+    if (options.functional) {
+      // for template-only hot-reload because in that case the render fn doesn't
+      // go through the normalizer
+      options._injectStyles = hook
+      // register for functioal component in vue file
+      var originalRender = options.render
+      options.render = function renderWithStyleInjection (h, context) {
+        hook.call(context)
+        return originalRender(h, context)
+      }
+    } else {
+      // inject component registration as beforeCreate hook
+      var existing = options.beforeCreate
+      options.beforeCreate = existing
+        ? [].concat(existing, hook)
+        : [hook]
+    }
+  }
+
+  return {
+    exports: scriptExports,
+    options: options
+  }
+}
+
+
+/***/ }),
+
+/***/ 46:
+/*!**************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/common/config.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var config = {
+  debug: !0,
+  version: '1.0.9.230428',
+  route: {
+    home: '/pages/tabbar/home',
+    login: '/pages/login/login',
+    order: '/pages/user/order/order',
+    pay: '/pages/pay/pay',
+    search: '/pages/home/search/search',
+    goods: '/pages/goods/goods',
+    goodslist: '/pages/goods/goods-list'
+  },
+  provider: '',
+  provider_names: {
+    'weixin': '微信',
+    'qq': 'QQ',
+    'alipay': '支付宝',
+    'baidu': '百度',
+    'toutiao': '头条'
+  },
+  const: {
+    __app: '__app',
+    __member: '__member',
+    __access_token: 'USE_ACCESS_TOKEN'
+  }
+};
+var _default = config;
+exports.default = _default;
+
+/***/ }),
+
+/***/ 462:
+/*!*******************************************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/utils.js ***!
+  \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20278,10 +20442,10 @@ function getImageInfo(img, isH5PathToBase64) {
 
 /***/ }),
 
-/***/ 446:
-/*!***************************************************************************************************!*\
-  !*** /Users/ethanliu/Documents/demo-web/uni_modules/lime-painter/components/lime-painter/draw.js ***!
-  \***************************************************************************************************/
+/***/ 463:
+/*!******************************************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/draw.js ***!
+  \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20299,9 +20463,9 @@ var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/run
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ 6));
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 24));
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 25));
-var _utils = __webpack_require__(/*! ./utils */ 445);
-var _gradient = __webpack_require__(/*! ./gradient */ 447);
-var _qrcode = _interopRequireDefault(__webpack_require__(/*! ./qrcode */ 448));
+var _utils = __webpack_require__(/*! ./utils */ 462);
+var _gradient = __webpack_require__(/*! ./gradient */ 464);
+var _qrcode = _interopRequireDefault(__webpack_require__(/*! ./qrcode */ 465));
 function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
@@ -21186,10 +21350,10 @@ exports.Draw = Draw;
 
 /***/ }),
 
-/***/ 447:
-/*!*******************************************************************************************************!*\
-  !*** /Users/ethanliu/Documents/demo-web/uni_modules/lime-painter/components/lime-painter/gradient.js ***!
-  \*******************************************************************************************************/
+/***/ 464:
+/*!**********************************************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/gradient.js ***!
+  \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21315,10 +21479,10 @@ function linearEffect(width, height, bg, ctx) {
 
 /***/ }),
 
-/***/ 448:
-/*!*****************************************************************************************************!*\
-  !*** /Users/ethanliu/Documents/demo-web/uni_modules/lime-painter/components/lime-painter/qrcode.js ***!
-  \*****************************************************************************************************/
+/***/ 465:
+/*!********************************************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/qrcode.js ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -21326,10 +21490,10 @@ function linearEffect(width, height, bg, ctx) {
 
 /***/ }),
 
-/***/ 449:
-/*!*****************************************************************************************************!*\
-  !*** /Users/ethanliu/Documents/demo-web/uni_modules/lime-painter/components/lime-painter/layout.js ***!
-  \*****************************************************************************************************/
+/***/ 466:
+/*!********************************************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/layout.js ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21348,7 +21512,7 @@ var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/run
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 30));
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 24));
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 25));
-var _utils = __webpack_require__(/*! ./utils */ 445);
+var _utils = __webpack_require__(/*! ./utils */ 462);
 var Layout = /*#__PURE__*/function () {
   function Layout() {
     (0, _classCallCheck2.default)(this, Layout);
@@ -21920,142 +22084,10 @@ exports.Layout = Layout;
 
 /***/ }),
 
-/***/ 45:
-/*!**********************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js ***!
-  \**********************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return normalizeComponent; });
-/* globals __VUE_SSR_CONTEXT__ */
-
-// IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
-// This module is a runtime utility for cleaner component module output and will
-// be included in the final webpack user bundle.
-
-function normalizeComponent (
-  scriptExports,
-  render,
-  staticRenderFns,
-  functionalTemplate,
-  injectStyles,
-  scopeId,
-  moduleIdentifier, /* server only */
-  shadowMode, /* vue-cli only */
-  components, // fixed by xxxxxx auto components
-  renderjs // fixed by xxxxxx renderjs
-) {
-  // Vue.extend constructor export interop
-  var options = typeof scriptExports === 'function'
-    ? scriptExports.options
-    : scriptExports
-
-  // fixed by xxxxxx auto components
-  if (components) {
-    if (!options.components) {
-      options.components = {}
-    }
-    var hasOwn = Object.prototype.hasOwnProperty
-    for (var name in components) {
-      if (hasOwn.call(components, name) && !hasOwn.call(options.components, name)) {
-        options.components[name] = components[name]
-      }
-    }
-  }
-  // fixed by xxxxxx renderjs
-  if (renderjs) {
-    if(typeof renderjs.beforeCreate === 'function'){
-			renderjs.beforeCreate = [renderjs.beforeCreate]
-		}
-    (renderjs.beforeCreate || (renderjs.beforeCreate = [])).unshift(function() {
-      this[renderjs.__module] = this
-    });
-    (options.mixins || (options.mixins = [])).push(renderjs)
-  }
-
-  // render functions
-  if (render) {
-    options.render = render
-    options.staticRenderFns = staticRenderFns
-    options._compiled = true
-  }
-
-  // functional template
-  if (functionalTemplate) {
-    options.functional = true
-  }
-
-  // scopedId
-  if (scopeId) {
-    options._scopeId = 'data-v-' + scopeId
-  }
-
-  var hook
-  if (moduleIdentifier) { // server build
-    hook = function (context) {
-      // 2.3 injection
-      context =
-        context || // cached call
-        (this.$vnode && this.$vnode.ssrContext) || // stateful
-        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
-      // 2.2 with runInNewContext: true
-      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
-        context = __VUE_SSR_CONTEXT__
-      }
-      // inject component styles
-      if (injectStyles) {
-        injectStyles.call(this, context)
-      }
-      // register component module identifier for async chunk inferrence
-      if (context && context._registeredComponents) {
-        context._registeredComponents.add(moduleIdentifier)
-      }
-    }
-    // used by ssr in case component is cached and beforeCreate
-    // never gets called
-    options._ssrRegister = hook
-  } else if (injectStyles) {
-    hook = shadowMode
-      ? function () { injectStyles.call(this, this.$root.$options.shadowRoot) }
-      : injectStyles
-  }
-
-  if (hook) {
-    if (options.functional) {
-      // for template-only hot-reload because in that case the render fn doesn't
-      // go through the normalizer
-      options._injectStyles = hook
-      // register for functioal component in vue file
-      var originalRender = options.render
-      options.render = function renderWithStyleInjection (h, context) {
-        hook.call(context)
-        return originalRender(h, context)
-      }
-    } else {
-      // inject component registration as beforeCreate hook
-      var existing = options.beforeCreate
-      options.beforeCreate = existing
-        ? [].concat(existing, hook)
-        : [hook]
-    }
-  }
-
-  return {
-    exports: scriptExports,
-    options: options
-  }
-}
-
-
-/***/ }),
-
-/***/ 450:
-/*!*****************************************************************************************************!*\
-  !*** /Users/ethanliu/Documents/demo-web/uni_modules/lime-painter/components/lime-painter/canvas.js ***!
-  \*****************************************************************************************************/
+/***/ 467:
+/*!********************************************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/canvas.js ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22132,10 +22164,455 @@ function adaptor(ctx) {
 
 /***/ }),
 
-/***/ 456:
-/*!***************************************************************************************!*\
-  !*** /Users/ethanliu/Documents/demo-web/components/use-address/city-data/province.js ***!
-  \***************************************************************************************/
+/***/ 47:
+/*!**************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/common/common.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 5);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/typeof */ 14));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 24));
+var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 25));
+var _config = _interopRequireDefault(__webpack_require__(/*! ./config.js */ 46));
+var Common = /*#__PURE__*/function () {
+  function Common(arg) {
+    (0, _classCallCheck2.default)(this, Common);
+  }
+
+  /**
+   * @description 日期格式化
+   */
+  (0, _createClass2.default)(Common, [{
+    key: "format",
+    value: function format(date, fmt) {
+      if (typeof date === 'string') {
+        date = date.replace(/\.|\-/g, '/');
+      }
+      if ((0, _typeof2.default)(date) !== 'object') {
+        date = new Date(date);
+      }
+      fmt = fmt || 'yyyy-MM-dd hh:mm:ss';
+      var o = {
+        "M+": date.getMonth() + 1,
+        //月份   
+        "d+": date.getDate(),
+        //日   
+        "h+": date.getHours(),
+        //小时   
+        "m+": date.getMinutes(),
+        //分   
+        "s+": date.getSeconds(),
+        //秒
+        "q+": Math.floor((date.getMonth() + 3) / 3),
+        //季度
+        "S": date.getMilliseconds() //毫秒
+      };
+
+      if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (date.getFullYear() + "").substr(4 - RegExp.$1.length));
+      for (var k in o) {
+        if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, RegExp.$1.length == 1 ? o[k] : ("00" + o[k]).substr(("" + o[k]).length));
+      }
+      return fmt;
+    }
+  }, {
+    key: "format_price",
+    value: function format_price(_number, _sep) {
+      _number = typeof _number != "undefined" && _number > 0 ? _number + '' : "";
+      if (_number.indexOf('.') != -1) {
+        _number = _number.split('.')[0];
+      }
+      _number = _number.replace(new RegExp("^(\\d{" + (_number.length % 3 ? _number.length % 3 : 0) + "})(\\d{3})", "g"), "$1 $2").replace(/(\d{3})+?/gi, "$1 ").trim();
+      if (typeof _sep != "undefined" && _sep != " ") {
+        _number = _number.replace(/\s/g, _sep);
+      }
+      return _number;
+    }
+  }, {
+    key: "get_price_decimal",
+    value: function get_price_decimal(_price) {
+      _price = _price + '';
+      if (_price.indexOf('.') != -1) {
+        return '.' + _price.split('.')[1];
+      } else {
+        _price = Math.random(2).toFixed(2);
+      }
+      return this.get_price_decimal(_price);
+    }
+
+    /**
+     * @description 全球唯一 guid
+     */
+  }, {
+    key: "guid",
+    value: function guid() {
+      return this.__s4() + this.__s4() + "-" + this.__s4() + "-" + this.__s4() + "-" + this.__s4() + "-" + this.__s4() + this.__s4() + this.__s4();
+    }
+  }, {
+    key: "__s4",
+    value: function __s4() {
+      return ((1 + Math.random()) * 0x10000 | 0).toString(16).substring(1);
+    }
+
+    /**
+     * @description 消息提示 toast
+     */
+  }, {
+    key: "msg",
+    value: function msg(title) {
+      var duration = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1500;
+      var mask = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+      var icon = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 'none';
+      if (!title) return;
+      uni.showToast({
+        title: title,
+        duration: duration,
+        mask: mask,
+        icon: icon
+      });
+    }
+
+    /**
+     * @description 消息提示 alert
+     */
+  }, {
+    key: "alert",
+    value: function alert(content, callback) {
+      uni.showModal({
+        title: '提示',
+        content: content,
+        showCancel: false,
+        success: function success(res) {
+          if (res.confirm) {
+            if (typeof callback === 'function') {
+              callback();
+            }
+          } else if (res.cancel) {}
+        }
+      });
+    }
+
+    /**
+     * @description 获取路径参数
+     */
+  }, {
+    key: "get_params",
+    value: function get_params(data) {
+      var params = '';
+      if ((0, _typeof2.default)(data) === 'object') {
+        for (var _ in data) {
+          params += '&' + encodeURIComponent(_) + '=' + encodeURIComponent(data[_]);
+        }
+        params = '?' + params.slice(1);
+      } else if (typeof data === 'string') {
+        if (data.indexOf('?') != -1) params = data;else params = '?' + data;
+      } else {
+        params = data;
+      }
+      return params;
+    }
+
+    /**
+     * @description 去除两端空格
+     * */
+  }, {
+    key: "trim",
+    value: function trim(str) {
+      return str.replace(/\s+/g, "");
+    }
+
+    /**
+     * @description 注册当前环境
+     * */
+  }, {
+    key: "register_env",
+    value: function register_env(callback) {
+      var __timer = setTimeout(function () {
+        uni.getSystemInfo({
+          success: function success(sis) {
+            var env = {
+              platform: ''
+            };
+            if (uni.canIUse('getAccountInfoSync')) {
+              {
+                var accountInfo = uni.getAccountInfoSync();
+                if (accountInfo && accountInfo.miniProgram) {
+                  env.appid = accountInfo.miniProgram.appId;
+                }
+              }
+            }
+            env.brand = sis.brand;
+            env.language = sis.language;
+            env.model = sis.model;
+            env.platform = sis.platform;
+            env.screenHeight = sis.screenHeight;
+            env.screenWidth = sis.screenWidth;
+            env.statusBarHeight = sis.statusBarHeight;
+            env.system = sis.system;
+            env.version = sis.version;
+            env.windowHeight = sis.windowHeight;
+            env.windowWidth = sis.windowWidth;
+            env.pixelRatio = sis.pixelRatio;
+            env.pixelRatio = sis.pixelRatio;
+            env.mobileType = sis.platform;
+            env.is_mp = false;
+            env.is_wx = false;
+            env.is_h5 = false;
+            env.is_app = false;
+            if (uni.canIUse('SDKVersion')) {
+              env.sdkversion = my.SDKVersion;
+            }
+            env.platform = "weixin";
+            env.platform_name = "微信";
+            env.is_mp = true;
+            env.is_wx = true;
+            env.platform_icon = "icon" + env.platform;
+            env.sis = sis;
+            uni.getNetworkType({
+              success: function success(res) {
+                console.log(res.networkType);
+                env.networkType = res.networkType;
+              },
+              complete: function complete() {
+                console.log('set storage env', env);
+                uni.setStorage({
+                  key: '__env',
+                  data: env
+                });
+                if (typeof callback === 'function') {
+                  callback(env);
+                }
+              }
+            });
+          }
+        });
+        clearTimeout(__timer);
+      }, 1);
+    }
+
+    /**
+     * @description 运行环境
+     * */
+  }, {
+    key: "get_env",
+    value: function get_env(callback) {
+      // return uni.getStorageSync('env');
+      uni.getStorage({
+        key: '__env',
+        success: function success(res) {
+          if (typeof callback === 'function') {
+            callback(res.data || {});
+          }
+        }
+      });
+    }
+  }, {
+    key: "dom",
+    value: function dom(a, b) {
+      if (arguments.length === 1 && typeof arguments[0] == 'string') {
+        if (document.querySelector) {
+          return document.querySelector(arguments[0]);
+        }
+      } else if (arguments.length === 2) {
+        if (typeof a === 'string') a = this.dom(a);
+        if (a.querySelector) {
+          return a.querySelector(b);
+        }
+      }
+      return a;
+    }
+  }, {
+    key: "domAll",
+    value: function domAll(a, b) {
+      if (arguments.length === 1 && typeof arguments[0] == 'string') {
+        if (document.querySelectorAll) {
+          return document.querySelectorAll(arguments[0]);
+        }
+      } else if (arguments.length === 2) {
+        if (typeof a === 'string') a = this.dom(a);
+        if (a.querySelectorAll) {
+          return a.querySelectorAll(b);
+        }
+      }
+      return a;
+    }
+
+    /**
+     * @description 打印 info 日志
+     * */
+  }, {
+    key: "info",
+    value: function info(msg) {
+      console.info(msg);
+    }
+
+    /**
+     * @description 当前页面数组
+     * */
+  }, {
+    key: "pages",
+    value: function pages() {
+      return getCurrentPages();
+    }
+
+    /**
+     * @description 返回上一级页面|跳转首页
+     * */
+  }, {
+    key: "back",
+    value: function back() {
+      if (getCurrentPages().length > 1) {
+        uni.navigateBack({});
+        return;
+      }
+      this.tohome();
+    }
+
+    /**
+     * @description 指定元素选择器 offset
+     */
+  }, {
+    key: "offset",
+    value: function offset(selector, callback) {
+      var query = uni.createSelectorQuery().select(selector);
+      // console.log('offset query', query);
+      if (typeof callback === 'function') {
+        query.boundingClientRect(function (res) {
+          callback(res);
+        });
+      }
+    }
+
+    /**
+     * @description 超时
+     */
+  }, {
+    key: "timerout",
+    value: function timerout(callback) {
+      var timer = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1000;
+      var _timer = setTimeout(function () {
+        if (typeof callback === 'function') {
+          callback();
+        }
+        clearTimeout(_timer);
+      }, timer);
+    }
+
+    /**
+     * @description 跳转登录页
+     */
+  }, {
+    key: "tologin",
+    value: function tologin() {
+      uni.navigateTo({
+        url: _config.default.route.login
+      });
+    }
+
+    /**
+     * @description 跳转首页
+     */
+  }, {
+    key: "tohome",
+    value: function tohome() {
+      uni.switchTab({
+        url: _config.default.route.home
+      });
+    }
+
+    /**
+     * @description 跳转订单页
+     */
+  }, {
+    key: "toorder",
+    value: function toorder() {
+      uni.redirectTo({
+        url: _config.default.route.order
+      });
+    }
+
+    /**
+     * @description 跳转支付页
+     */
+  }, {
+    key: "topay",
+    value: function topay(params) {
+      params.money = params.money || 0;
+      params.type = params.type || 'navigate';
+      if (params.type == 'redirect') {
+        uni.redirectTo({
+          url: _config.default.route.pay + this.get_params(params)
+        });
+        return;
+      }
+      uni.navigateTo({
+        url: _config.default.route.pay + this.get_params(params)
+      });
+    }
+
+    /**
+     * @description 跳转搜索页
+     */
+  }, {
+    key: "tosearch",
+    value: function tosearch() {
+      uni.reLaunch({
+        url: _config.default.route.search
+      });
+    }
+
+    /**
+     * @description 跳转产品详情页
+     */
+  }, {
+    key: "togoods",
+    value: function togoods(params) {
+      uni.navigateTo({
+        url: _config.default.route.goods + this.get_params(params)
+      });
+    }
+
+    /**
+     * @description 跳转产品列表页
+     */
+  }, {
+    key: "togoodslist",
+    value: function togoodslist(params) {
+      uni.navigateTo({
+        url: _config.default.route.goodslist + this.get_params(params)
+      });
+    }
+
+    /**
+     * @description 获取路径文件名称
+     */
+  }, {
+    key: "getFileName",
+    value: function getFileName(path) {
+      if (path.indexOf('/') === -1) return '';
+      return path.split('/').reverse()[0];
+    }
+  }]);
+  return Common;
+}();
+var _default = new Common();
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 4)["default"]))
+
+/***/ }),
+
+/***/ 473:
+/*!******************************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/components/use-address/city-data/province.js ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22258,10 +22735,10 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 457:
-/*!***********************************************************************************!*\
-  !*** /Users/ethanliu/Documents/demo-web/components/use-address/city-data/city.js ***!
-  \***********************************************************************************/
+/***/ 474:
+/*!**************************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/components/use-address/city-data/city.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23383,10 +23860,10 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 458:
-/*!***********************************************************************************!*\
-  !*** /Users/ethanliu/Documents/demo-web/components/use-address/city-data/area.js ***!
-  \***********************************************************************************/
+/***/ 475:
+/*!**************************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/components/use-address/city-data/area.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -32506,500 +32983,10 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 46:
-/*!***********************************************************!*\
-  !*** /Users/ethanliu/Documents/demo-web/common/config.js ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var config = {
-  debug: !0,
-  version: '1.0.9.230428',
-  route: {
-    home: '/pages/tabbar/home',
-    login: '/pages/login/login',
-    order: '/pages/user/order/order',
-    pay: '/pages/pay/pay',
-    search: '/pages/home/search/search',
-    goods: '/pages/goods/goods',
-    goodslist: '/pages/goods/goods-list'
-  },
-  provider: '',
-  provider_names: {
-    'weixin': '微信',
-    'qq': 'QQ',
-    'alipay': '支付宝',
-    'baidu': '百度',
-    'toutiao': '头条'
-  },
-  const: {
-    __app: '__app',
-    __member: '__member',
-    __access_token: 'USE_ACCESS_TOKEN'
-  }
-};
-var _default = config;
-exports.default = _default;
-
-/***/ }),
-
-/***/ 47:
-/*!***********************************************************!*\
-  !*** /Users/ethanliu/Documents/demo-web/common/common.js ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 5);
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/typeof */ 14));
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 24));
-var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 25));
-var _config = _interopRequireDefault(__webpack_require__(/*! ./config.js */ 46));
-var Common = /*#__PURE__*/function () {
-  function Common(arg) {
-    (0, _classCallCheck2.default)(this, Common);
-  }
-
-  /**
-   * @description 日期格式化
-   */
-  (0, _createClass2.default)(Common, [{
-    key: "format",
-    value: function format(date, fmt) {
-      if (typeof date === 'string') {
-        date = date.replace(/\.|\-/g, '/');
-      }
-      if ((0, _typeof2.default)(date) !== 'object') {
-        date = new Date(date);
-      }
-      fmt = fmt || 'yyyy-MM-dd hh:mm:ss';
-      var o = {
-        "M+": date.getMonth() + 1,
-        //月份   
-        "d+": date.getDate(),
-        //日   
-        "h+": date.getHours(),
-        //小时   
-        "m+": date.getMinutes(),
-        //分   
-        "s+": date.getSeconds(),
-        //秒
-        "q+": Math.floor((date.getMonth() + 3) / 3),
-        //季度
-        "S": date.getMilliseconds() //毫秒
-      };
-
-      if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (date.getFullYear() + "").substr(4 - RegExp.$1.length));
-      for (var k in o) {
-        if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, RegExp.$1.length == 1 ? o[k] : ("00" + o[k]).substr(("" + o[k]).length));
-      }
-      return fmt;
-    }
-  }, {
-    key: "format_price",
-    value: function format_price(_number, _sep) {
-      _number = typeof _number != "undefined" && _number > 0 ? _number + '' : "";
-      if (_number.indexOf('.') != -1) {
-        _number = _number.split('.')[0];
-      }
-      _number = _number.replace(new RegExp("^(\\d{" + (_number.length % 3 ? _number.length % 3 : 0) + "})(\\d{3})", "g"), "$1 $2").replace(/(\d{3})+?/gi, "$1 ").trim();
-      if (typeof _sep != "undefined" && _sep != " ") {
-        _number = _number.replace(/\s/g, _sep);
-      }
-      return _number;
-    }
-  }, {
-    key: "get_price_decimal",
-    value: function get_price_decimal(_price) {
-      _price = _price + '';
-      if (_price.indexOf('.') != -1) {
-        return '.' + _price.split('.')[1];
-      } else {
-        _price = Math.random(2).toFixed(2);
-      }
-      return this.get_price_decimal(_price);
-    }
-
-    /**
-     * @description 全球唯一 guid
-     */
-  }, {
-    key: "guid",
-    value: function guid() {
-      return this.__s4() + this.__s4() + "-" + this.__s4() + "-" + this.__s4() + "-" + this.__s4() + "-" + this.__s4() + this.__s4() + this.__s4();
-    }
-  }, {
-    key: "__s4",
-    value: function __s4() {
-      return ((1 + Math.random()) * 0x10000 | 0).toString(16).substring(1);
-    }
-
-    /**
-     * @description 消息提示 toast
-     */
-  }, {
-    key: "msg",
-    value: function msg(title) {
-      var duration = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1500;
-      var mask = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-      var icon = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 'none';
-      if (!title) return;
-      uni.showToast({
-        title: title,
-        duration: duration,
-        mask: mask,
-        icon: icon
-      });
-    }
-
-    /**
-     * @description 消息提示 alert
-     */
-  }, {
-    key: "alert",
-    value: function alert(content, callback) {
-      uni.showModal({
-        title: '提示',
-        content: content,
-        showCancel: false,
-        success: function success(res) {
-          if (res.confirm) {
-            if (typeof callback === 'function') {
-              callback();
-            }
-          } else if (res.cancel) {}
-        }
-      });
-    }
-
-    /**
-     * @description 获取路径参数
-     */
-  }, {
-    key: "get_params",
-    value: function get_params(data) {
-      var params = '';
-      if ((0, _typeof2.default)(data) === 'object') {
-        for (var _ in data) {
-          params += '&' + encodeURIComponent(_) + '=' + encodeURIComponent(data[_]);
-        }
-        params = '?' + params.slice(1);
-      } else if (typeof data === 'string') {
-        if (data.indexOf('?') != -1) params = data;else params = '?' + data;
-      } else {
-        params = data;
-      }
-      return params;
-    }
-
-    /**
-     * @description 去除两端空格
-     * */
-  }, {
-    key: "trim",
-    value: function trim(str) {
-      return str.replace(/\s+/g, "");
-    }
-
-    /**
-     * @description 注册当前环境
-     * */
-  }, {
-    key: "register_env",
-    value: function register_env(callback) {
-      var __timer = setTimeout(function () {
-        uni.getSystemInfo({
-          success: function success(sis) {
-            var env = {
-              platform: ''
-            };
-            if (uni.canIUse('getAccountInfoSync')) {
-              {
-                var accountInfo = uni.getAccountInfoSync();
-                if (accountInfo && accountInfo.miniProgram) {
-                  env.appid = accountInfo.miniProgram.appId;
-                }
-              }
-            }
-            env.brand = sis.brand;
-            env.language = sis.language;
-            env.model = sis.model;
-            env.platform = sis.platform;
-            env.screenHeight = sis.screenHeight;
-            env.screenWidth = sis.screenWidth;
-            env.statusBarHeight = sis.statusBarHeight;
-            env.system = sis.system;
-            env.version = sis.version;
-            env.windowHeight = sis.windowHeight;
-            env.windowWidth = sis.windowWidth;
-            env.pixelRatio = sis.pixelRatio;
-            env.pixelRatio = sis.pixelRatio;
-            env.mobileType = sis.platform;
-            env.is_mp = false;
-            env.is_wx = false;
-            env.is_h5 = false;
-            env.is_app = false;
-            if (uni.canIUse('SDKVersion')) {
-              env.sdkversion = my.SDKVersion;
-            }
-            env.platform = "weixin";
-            env.platform_name = "微信";
-            env.is_mp = true;
-            env.is_wx = true;
-            env.platform_icon = "icon" + env.platform;
-            env.sis = sis;
-            uni.getNetworkType({
-              success: function success(res) {
-                console.log(res.networkType);
-                env.networkType = res.networkType;
-              },
-              complete: function complete() {
-                console.log('set storage env', env);
-                uni.setStorage({
-                  key: '__env',
-                  data: env
-                });
-                if (typeof callback === 'function') {
-                  callback(env);
-                }
-              }
-            });
-          }
-        });
-        clearTimeout(__timer);
-      }, 1);
-    }
-
-    /**
-     * @description 运行环境
-     * */
-  }, {
-    key: "get_env",
-    value: function get_env(callback) {
-      // return uni.getStorageSync('env');
-      uni.getStorage({
-        key: '__env',
-        success: function success(res) {
-          if (typeof callback === 'function') {
-            callback(res.data || {});
-          }
-        }
-      });
-    }
-  }, {
-    key: "dom",
-    value: function dom(a, b) {
-      if (arguments.length === 1 && typeof arguments[0] == 'string') {
-        if (document.querySelector) {
-          return document.querySelector(arguments[0]);
-        }
-      } else if (arguments.length === 2) {
-        if (typeof a === 'string') a = this.dom(a);
-        if (a.querySelector) {
-          return a.querySelector(b);
-        }
-      }
-      return a;
-    }
-  }, {
-    key: "domAll",
-    value: function domAll(a, b) {
-      if (arguments.length === 1 && typeof arguments[0] == 'string') {
-        if (document.querySelectorAll) {
-          return document.querySelectorAll(arguments[0]);
-        }
-      } else if (arguments.length === 2) {
-        if (typeof a === 'string') a = this.dom(a);
-        if (a.querySelectorAll) {
-          return a.querySelectorAll(b);
-        }
-      }
-      return a;
-    }
-
-    /**
-     * @description 打印 info 日志
-     * */
-  }, {
-    key: "info",
-    value: function info(msg) {
-      console.info(msg);
-    }
-
-    /**
-     * @description 当前页面数组
-     * */
-  }, {
-    key: "pages",
-    value: function pages() {
-      return getCurrentPages();
-    }
-
-    /**
-     * @description 返回上一级页面|跳转首页
-     * */
-  }, {
-    key: "back",
-    value: function back() {
-      if (getCurrentPages().length > 1) {
-        uni.navigateBack({});
-        return;
-      }
-      this.tohome();
-    }
-
-    /**
-     * @description 指定元素选择器 offset
-     */
-  }, {
-    key: "offset",
-    value: function offset(selector, callback) {
-      var query = uni.createSelectorQuery().select(selector);
-      // console.log('offset query', query);
-      if (typeof callback === 'function') {
-        query.boundingClientRect(function (res) {
-          callback(res);
-        });
-      }
-    }
-
-    /**
-     * @description 超时
-     */
-  }, {
-    key: "timerout",
-    value: function timerout(callback) {
-      var timer = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1000;
-      var _timer = setTimeout(function () {
-        if (typeof callback === 'function') {
-          callback();
-        }
-        clearTimeout(_timer);
-      }, timer);
-    }
-
-    /**
-     * @description 跳转登录页
-     */
-  }, {
-    key: "tologin",
-    value: function tologin() {
-      uni.navigateTo({
-        url: _config.default.route.login
-      });
-    }
-
-    /**
-     * @description 跳转首页
-     */
-  }, {
-    key: "tohome",
-    value: function tohome() {
-      uni.switchTab({
-        url: _config.default.route.home
-      });
-    }
-
-    /**
-     * @description 跳转订单页
-     */
-  }, {
-    key: "toorder",
-    value: function toorder() {
-      uni.redirectTo({
-        url: _config.default.route.order
-      });
-    }
-
-    /**
-     * @description 跳转支付页
-     */
-  }, {
-    key: "topay",
-    value: function topay(params) {
-      params.money = params.money || 0;
-      params.type = params.type || 'navigate';
-      if (params.type == 'redirect') {
-        uni.redirectTo({
-          url: _config.default.route.pay + this.get_params(params)
-        });
-        return;
-      }
-      uni.navigateTo({
-        url: _config.default.route.pay + this.get_params(params)
-      });
-    }
-
-    /**
-     * @description 跳转搜索页
-     */
-  }, {
-    key: "tosearch",
-    value: function tosearch() {
-      uni.reLaunch({
-        url: _config.default.route.search
-      });
-    }
-
-    /**
-     * @description 跳转产品详情页
-     */
-  }, {
-    key: "togoods",
-    value: function togoods(params) {
-      uni.navigateTo({
-        url: _config.default.route.goods + this.get_params(params)
-      });
-    }
-
-    /**
-     * @description 跳转产品列表页
-     */
-  }, {
-    key: "togoodslist",
-    value: function togoodslist(params) {
-      uni.navigateTo({
-        url: _config.default.route.goodslist + this.get_params(params)
-      });
-    }
-
-    /**
-     * @description 获取路径文件名称
-     */
-  }, {
-    key: "getFileName",
-    value: function getFileName(path) {
-      if (path.indexOf('/') === -1) return '';
-      return path.split('/').reverse()[0];
-    }
-  }]);
-  return Common;
-}();
-var _default = new Common();
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 4)["default"]))
-
-/***/ }),
-
 /***/ 48:
-/*!*******************************************************!*\
-  !*** /Users/ethanliu/Documents/demo-web/common/db.js ***!
-  \*******************************************************/
+/*!**********************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/common/db.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33353,9 +33340,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 49:
-/*!*********************************************************!*\
-  !*** /Users/ethanliu/Documents/demo-web/common/func.js ***!
-  \*********************************************************/
+/*!************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/common/func.js ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33451,9 +33438,9 @@ module.exports = _interopRequireDefault, module.exports.__esModule = true, modul
 /***/ }),
 
 /***/ 50:
-/*!**********************************************************!*\
-  !*** /Users/ethanliu/Documents/demo-web/common/store.js ***!
-  \**********************************************************/
+/*!*************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/common/store.js ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
