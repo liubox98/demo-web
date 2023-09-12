@@ -2,8 +2,11 @@
 	"passwordSecret": [{
 		"version": 1,
 		"value": "usemall.unicloud.password.secret"
+	}, {
+		"version": 2,
+		"value": "usemall.unicloud.password.woniu"
 	}],
-	"tokenSecret": "usemall.unicloud.token.secret",
+	"tokenSecret": "usemall.unicloud.token.woniu",
 	"tokenExpiresIn": 259200,
 	"tokenExpiresThreshold": 600,
 	"passwordErrorLimit": 6,
@@ -15,8 +18,8 @@
 		"tokenExpiresIn": 2592000,
 		"oauth": {
 			"weixin": {
-				"appid": "weixin appid",
-				"appsecret": "weixin appsecret"
+				"appid": "wxdb41a893a9156073",
+				"appsecret": "f70129ed73b8a311a4cf6f47591b07fe"
 			}
 		}
 	},
@@ -54,17 +57,17 @@
 	},
 	"service": {
 		"sms": {
-			"name": "应用名称，对应短信模版的name",
+			"name": "sms module name",
 			"codeExpiresIn": 600,
-			"smsKey": "短信密钥key",
-			"smsSecret": "短信密钥secret"
+			"smsKey": "fcf2863cd4b19345d41c157277cd29de",
+			"smsSecret": "a384b52cbe3876af7141a8b688ce3644"
 		},
 		"smscode": {
-			"templateId": "验证码短信模板Id"
+			"templateId": "30151"
 		}
 	},
 	"kd100": {
-		"customer": "快递100 customer",
-		"key": "快递100 授权KEY"
+		"customer": "355247E07DD7613A6280BDC253F8EF9D",
+		"key": "uBTqrSIl3795"
 	}
 }

@@ -96,7 +96,7 @@
 			</view>
 			<view class="border-radius margin-top-sm bg-main">
 				<use-list-title title="工单详情" iconfont="iconshoucang-" color="#ff6a6c" fwt="600" :tip="stats.collect"
-					@goto="to('/pages/user/collect/collect')"></use-list-title>
+					@goto="to('/pages/user/gongdan/gongdan')"></use-list-title>
 			</view>
 
 			<view class="border-radius margin-top-sm bg-main">
@@ -113,7 +113,7 @@
 				</scroll-view>
 
 				<use-list-title title="我发表的" iconfonts="icon-jiluwendang" color="#ff6a6c" fwt="600" :tip="stats.collect"
-					@goto="to('/pages/user/collect/collect')"></use-list-title>
+					@goto="to('/pages/user/post/post')"></use-list-title>
 
 				<use-list-title title="我评论的" iconfont="iconshoucang-" color="#ff6a6c" fwt="600" :tip="stats.collect"
 					@goto="to('/pages/user/collect/collect')"></use-list-title>

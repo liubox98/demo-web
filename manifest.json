@@ -1,7 +1,7 @@
 {
     "name" : "uniCloud多功能平台",
     "appid" : "__UNI__DD95040",
-    "versionCode" : 109,
+    "versionCode" : 100,
     "transformPx" : false,
     /* 5+App特有相关 */
     "app-plus" : {
@@ -112,5 +112,6 @@
             "minified" : true
         }
     },
-    "vueVersion" : "2"
+    "vueVersion" : "2",
+    "versionName" : "1.0"
 }

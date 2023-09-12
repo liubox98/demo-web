@@ -2,7 +2,6 @@
   "pages": [
     "pages/tabbar/home",
     "pages/tabbar/category",
-    "pages/tabbar/shopping",
     "pages/tabbar/cart",
     "pages/tabbar/user",
     "pages/home/search/search",
@@ -37,10 +36,12 @@
     "pages/shopping/follow",
     "pages/shopping/fans",
     "pages/shopping/detail",
-    "pages/tabbar/test_store",
-    "pages/tabbar/test_category",
-    "pages/tabbar/test_ticket",
-    "pages/tabbar/test_data_query"
+    "pages/tabbar/store",
+    "pages/tabbar/ticket",
+    "pages/tabbar/data_query",
+    "pages/user/gongdan/gongdan",
+    "pages/user/post/post",
+    "pages/tabbar/abc"
   ],
   "subPackages": [],
   "window": {
@@ -61,17 +62,17 @@
         "selectedIconPath": "static/images/tabbar/home-active.png"
       },
       {
-        "pagePath": "pages/tabbar/test_data_query",
+        "pagePath": "pages/tabbar/data_query",
         "iconPath": "static/images/tabbar/category.png",
         "selectedIconPath": "static/images/tabbar/category-active.png"
       },
       {
-        "pagePath": "pages/tabbar/test_ticket",
+        "pagePath": "pages/tabbar/ticket",
         "iconPath": "static/images/tabbar/shopping.png",
         "selectedIconPath": "static/images/tabbar/shopping-active.png"
       },
       {
-        "pagePath": "pages/tabbar/test_store",
+        "pagePath": "pages/tabbar/store",
         "iconPath": "static/images/tabbar/cart.png",
         "selectedIconPath": "static/images/tabbar/cart-active.png"
       },

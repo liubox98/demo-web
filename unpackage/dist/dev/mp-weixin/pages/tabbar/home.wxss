@@ -19,7 +19,7 @@
 /* 文章场景相关 */
 /* 轮播图区 */
 .swiper-area .swiper {
-  height: 240rpx;
+  height: 320rpx;
 }
 /* 分类区 */
 .category-area {

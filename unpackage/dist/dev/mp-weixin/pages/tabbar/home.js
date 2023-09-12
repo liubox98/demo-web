@@ -102,16 +102,16 @@ var components
 try {
   components = {
     useHeader: function () {
-      return __webpack_require__.e(/*! import() | components/use-header/use-header */ "components/use-header/use-header").then(__webpack_require__.bind(null, /*! @/components/use-header/use-header.vue */ 374))
+      return __webpack_require__.e(/*! import() | components/use-header/use-header */ "components/use-header/use-header").then(__webpack_require__.bind(null, /*! @/components/use-header/use-header.vue */ 371))
     },
     useListTitle: function () {
-      return __webpack_require__.e(/*! import() | components/use-list-title/use-list-title */ "components/use-list-title/use-list-title").then(__webpack_require__.bind(null, /*! @/components/use-list-title/use-list-title.vue */ 381))
+      return __webpack_require__.e(/*! import() | components/use-list-title/use-list-title */ "components/use-list-title/use-list-title").then(__webpack_require__.bind(null, /*! @/components/use-list-title/use-list-title.vue */ 378))
     },
     useHotGoods: function () {
-      return __webpack_require__.e(/*! import() | components/use-hot-goods/use-hot-goods */ "components/use-hot-goods/use-hot-goods").then(__webpack_require__.bind(null, /*! @/components/use-hot-goods/use-hot-goods.vue */ 388))
+      return __webpack_require__.e(/*! import() | components/use-hot-goods/use-hot-goods */ "components/use-hot-goods/use-hot-goods").then(__webpack_require__.bind(null, /*! @/components/use-hot-goods/use-hot-goods.vue */ 385))
     },
     useTotop: function () {
-      return __webpack_require__.e(/*! import() | components/use-totop/use-totop */ "components/use-totop/use-totop").then(__webpack_require__.bind(null, /*! @/components/use-totop/use-totop.vue */ 395))
+      return __webpack_require__.e(/*! import() | components/use-totop/use-totop */ "components/use-totop/use-totop").then(__webpack_require__.bind(null, /*! @/components/use-totop/use-totop.vue */ 392))
     },
   }
 } catch (e) {
@@ -262,6 +262,7 @@ var _default = {
                 return _this2.$func.usemall.call('app/mp/home', {
                   rows: 8
                 }).then(function (res) {
+                  console.log('res', res);
                   if (res.code === 200) {
                     // 轮播图
                     _this2.swiperDatas = res.datas.carousel || [];
@@ -288,6 +289,13 @@ var _default = {
     // 搜索回调函数
     search: function search() {
       console.log('home search');
+    },
+    goPage: function goPage(page) {
+      console.log('[商城]使用参数构建URL:', page);
+      console.log("/pages/tabbar/".concat(page));
+      uni.navigateTo({
+        url: "/pages/tabbar/".concat(page)
+      });
     },
     // 跳转页面
     topage: function topage(item) {

@@ -69,6 +69,9 @@
 			<!-- #endif -->
 		</view>
 
+		<!-- 用云版权 -->
+		<use-copyright class="pos-f w-full" style="bottom: -30rpx"></use-copyright>
+
 		<!-- 弹出框 -->
 		<view v-if="isshow" class="l-mask"></view>
 		<view v-if="isshow" class="box-container">
@@ -148,6 +151,54 @@
 		},
 		methods: {
 			...mapMutations(['login', 'logout', 'token']),
+			openAuthSetting() {
+				let _this = this;
+
+				uni.authorize({
+					scope: 'scope.userInfo',
+					success() {
+						console.log('scope.userInfo success');
+					},
+					fail() {
+						uni.getSetting({
+							success(res) {
+								console.log('getSetting ', res);
+								_this.authorize = res.authSetting['scope.userInfo'];
+								console.log('getSetting scope.userInfo authorize ', _this.authorize);
+
+								if (!_this.authorize) {
+									uni.showModal({
+										title: '提示',
+										content: '打开授权后才能使用授权登录',
+										success: function(res) {
+											if (res.confirm) {
+												uni.openSetting({
+													success(res) {
+														console.log('openSetting', res
+															.authSetting);
+														_this.authorize = res
+															.authSetting[
+																'scope.userInfo'];
+													},
+													fail() {
+														_this.$api.msg('打开当前设置失败',
+															5000);
+													}
+												});
+											} else if (res.cancel) {
+												console.log('用户点击取消');
+											}
+										}
+									});
+								}
+							},
+							fail() {
+								_this.$api.msg('获取当前设置失败', 5000);
+							}
+						});
+					}
+				});
+			},
 			inputChange(e) {
 				const key = e.currentTarget.dataset.key;
 				this[key] = e.detail.value;
@@ -155,7 +206,7 @@
 			toforget() {
 				// 忘记密码
 				uni.navigateTo({
-					url: '/pages/login/forgot-passwrd'
+					url: '/pages/login/forgot-password'
 				});
 			},
 			toregister() {
@@ -205,7 +256,7 @@
 							return;
 						}
 
-						_this.$api.msg(res.msg);
+						this.$api.msg(res.msg);
 					});
 			},
 
@@ -284,7 +335,7 @@
 										return;
 									}
 
-									_this.$api.msg(res.msg);
+									this.$api.msg(res.msg);
 								});
 						}
 					},
@@ -292,6 +343,26 @@
 						console.log('uni.login', err);
 					}
 				});
+
+				// 调用 store mp_login
+				// _this.mp_login({
+				// 	logintype: 'relogin',
+				// 	type: _this.platform + '-mini',
+				// 	callback: (loginres) => {
+				// 		console.log('mp_login callback', loginres);
+				// 		if (loginres.code !== 200) {
+				// 			_this.$api.msg(loginres.msg, 5000);
+				// 			return;
+				// 		}
+
+				// 		// 调用 store login
+				// 		_this.login(loginres.datas);
+
+				// 		_this.$api.alert('登录成功', () => {
+				// 			uni.navigateBack();
+				// 		});
+				// 	}
+				// });
 			},
 			onAuthError(res) {
 				console.log('onAuthError', arguments);
@@ -336,7 +407,7 @@
 										return;
 									}
 
-									_this.$api.msg(res.msg);
+									this.$api.msg(res.msg);
 								});
 						}
 					},

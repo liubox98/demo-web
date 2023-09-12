@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 购物车按钮样式，与页面中的按钮一致 */
+.cart-button {
+  position: fixed;
+  bottom: 20px;
+  /* 距离屏幕底部的距离 */
+  left: 20px;
+  /* 距离屏幕左侧的距离 */
+  width: 80px;
+  /* 按钮宽度 */
+  height: 40px;
+  /* 按钮高度 */
+  background-color: #007AFF;
+  /* 按钮背景颜色 */
+  color: #fff;
+  /* 按钮文字颜色 */
+  font-size: 16px;
+  /* 按钮文字大小 */
+  border: none;
+  /* 去掉按钮边框 */
+  border-radius: 20px;
+  /* 圆角 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  /* 确保按钮在其他内容之上 */
+}
+/* 轮播图区 */
+.swiper-area .swiper {
+  height: 240rpx;
+}
+/* 分类区 */
+.category-area {
+  padding: 60rpx 0 30rpx 0;
+}
+.category-area .category-item {
+  font-size: 26rpx;
+  color: #303133;
+  width: 25%;
+}
+.category-area image {
+  width: 96rpx;
+  height: 96rpx;
+}
+/* 限时精选区 */
+.limit-area {
+  min-height: 240rpx;
+}
+.limit-area .item {
+  width: 240rpx;
+}
+.limit-area .item image {
+  width: 240rpx;
+  height: 240rpx;
+}
+

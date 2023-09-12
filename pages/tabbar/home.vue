@@ -2,12 +2,13 @@
 	<view class="box-sizing-b w-full">
 		<!-- 01. 头部组件 -->
 		<use-header :search-tip="searchTip" :search-auto="searchAuto" @search="search"></use-header>
-
 		<!-- 02. 轮播区 -->
 		<view class="swiper-area pos-r" v-if="swiperDatas && swiperDatas.length > 0">
 			<!-- 轮播组件 -->
-			<swiper class="swiper w-full" autoplay indicator-dots indicator-color="#f7f7f7" indicator-active-color="#ff6a6c">
-				<swiper-item class="swiper-item padding-lr wh-full box-sizing-b" v-for="(item, index) in swiperDatas" :key="index">
+			<swiper class="swiper w-full" autoplay indicator-dots indicator-color="#f7f7f7"
+				indicator-active-color="#ff6a6c">
+				<swiper-item class="swiper-item padding-lr wh-full box-sizing-b" v-for="(item, index) in swiperDatas"
+					:key="index">
 					<view class="wh-full" @click.stop="topage(item)">
 						<image class="border-radius wh-full" mode="aspectFill" :lazy-load="true" :src="item.img" />
 					</view>
@@ -35,7 +36,8 @@
 						@click="togoods(item)">
 						<image class="border-radius-xs" mode="aspectFill" :lazy-load="true" :src="item.img"></image>
 						<text class="title clamp padding-bottom-xs">{{ item.name }}</text>
-						<text class="price">{{ item.price / 100 }}</text><text class="m-price">{{ item.market_price / 100 }}</text>
+						<text class="price">{{ item.price / 100 }}</text><text
+							class="m-price">{{ item.market_price / 100 }}</text>
 					</view>
 				</view>
 			</scroll-view>
@@ -55,7 +57,9 @@
 </template>
 
 <script>
-	import { mapState } from 'vuex';
+	import {
+		mapState
+	} from 'vuex';
 
 	export default {
 		computed: {
@@ -81,8 +85,7 @@
 			};
 		},
 		// 监听页面加载
-		onLoad() {
-		},
+		onLoad() {},
 		onPageScroll(e) {
 			// this.scrollTop = e.scrollTop
 			this.$refs.usetop.change(e.scrollTop);
@@ -130,6 +133,7 @@
 				await this.$func.usemall.call('app/mp/home', {
 					rows: 8
 				}).then(res => {
+					console.log('res', res)
 					if (res.code === 200) {
 						// 轮播图
 						this.swiperDatas = res.datas.carousel || [];
@@ -151,6 +155,13 @@
 			// 搜索回调函数
 			search() {
 				console.log('home search');
+			},
+			goPage(page) {
+				console.log('[商城]使用参数构建URL:', page);
+				console.log(`/pages/tabbar/${page}`);
+				uni.navigateTo({
+					url: `/pages/tabbar/${page}`
+				});
 			},
 			// 跳转页面
 			topage(item) {
@@ -197,7 +208,7 @@
 	/* 轮播图区 */
 	.swiper-area {
 		.swiper {
-			height: 240rpx;
+			height: 320rpx;
 		}
 	}
 
@@ -230,5 +241,4 @@
 			}
 		}
 	}
-
 </style>

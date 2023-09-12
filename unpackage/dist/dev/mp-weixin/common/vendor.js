@@ -102,7 +102,7 @@ module.exports = _defineProperty, module.exports.__esModule = true, module.expor
 
 /***/ }),
 
-/***/ 129:
+/***/ 121:
 /*!**************************************************************!*\
   !*** C:/Users/liubo1/Desktop/Demo/demo-web/common/poster.js ***!
   \**************************************************************/
@@ -910,9 +910,9 @@ var b = "development" === "development",
         "172.21.192.1",
         "10.10.20.11"
     ],
-    "debugPort": 9000,
+    "debugPort": 9001,
     "initialLaunchType": "remote",
-    "servePort": 7000,
+    "servePort": 7001,
     "skipFiles": [
         "<node_internals>/**",
         "D:/HBuilderX/plugins/unicloud/**/*.js"
@@ -15076,13 +15076,6 @@ var _default = {
       "enablePullDownRefresh": true
     }
   }, {
-    "path": "pages/tabbar/shopping",
-    "style": {
-      "navigationBarTitleText": "购物圈",
-      "enablePullDownRefresh": true,
-      "navigationBarBackgroundColor": "#f5f5f5"
-    }
-  }, {
     "path": "pages/tabbar/cart",
     "style": {
       "navigationBarTitleText": "购物车",
@@ -15266,27 +15259,39 @@ var _default = {
       "enablePullDownRefresh": false
     }
   }, {
-    "path": "pages/tabbar/test_store",
+    "path": "pages/tabbar/store",
     "style": {
       "navigationBarTitleText": "商城",
       "enablePullDownRefresh": false
     }
   }, {
-    "path": "pages/tabbar/test_category",
-    "style": {
-      "navigationBarTitleText": "分类",
-      "enablePullDownRefresh": false
-    }
-  }, {
-    "path": "pages/tabbar/test_ticket",
+    "path": "pages/tabbar/ticket",
     "style": {
       "navigationBarTitleText": "故障工单",
       "enablePullDownRefresh": false
     }
   }, {
-    "path": "pages/tabbar/test_data_query",
+    "path": "pages/tabbar/data_query",
     "style": {
-      "navigationBarTitleText": "",
+      "navigationBarTitleText": "资料查询",
+      "enablePullDownRefresh": false
+    }
+  }, {
+    "path": "pages/user/gongdan/gongdan",
+    "style": {
+      "navigationBarTitleText": "工单详情",
+      "enablePullDownRefresh": false
+    }
+  }, {
+    "path": "pages/user/post/post",
+    "style": {
+      "navigationBarTitleText": "我发表的",
+      "enablePullDownRefresh": false
+    }
+  }, {
+    "path": "pages/tabbar/abc",
+    "style": {
+      "navigationBarTitleText": "abc",
       "enablePullDownRefresh": false
     }
   }],
@@ -15309,15 +15314,15 @@ var _default = {
       "iconPath": "static/images/tabbar/home.png",
       "selectedIconPath": "static/images/tabbar/home-active.png"
     }, {
-      "pagePath": "pages/tabbar/test_data_query",
+      "pagePath": "pages/tabbar/data_query",
       "iconPath": "static/images/tabbar/category.png",
       "selectedIconPath": "static/images/tabbar/category-active.png"
     }, {
-      "pagePath": "pages/tabbar/test_ticket",
+      "pagePath": "pages/tabbar/ticket",
       "iconPath": "static/images/tabbar/shopping.png",
       "selectedIconPath": "static/images/tabbar/shopping-active.png"
     }, {
-      "pagePath": "pages/tabbar/test_store",
+      "pagePath": "pages/tabbar/store",
       "iconPath": "static/images/tabbar/cart.png",
       "selectedIconPath": "static/images/tabbar/cart-active.png"
     }, {
@@ -16105,8 +16110,8 @@ function populateParameters(result) {
   var parameters = {
     appId: "__UNI__DD95040",
     appName: "uniCloud多功能平台",
-    appVersion: "undefined",
-    appVersionCode: "109",
+    appVersion: "1.0",
+    appVersionCode: "100",
     appLanguage: getAppLanguage(hostLanguage),
     uniCompileVersion: "3.8.12",
     uniRuntimeVersion: "3.8.12",
@@ -16204,8 +16209,8 @@ var getAppBaseInfo = {
     result = sortObject(Object.assign(result, {
       appId: "__UNI__DD95040",
       appName: "uniCloud多功能平台",
-      appVersion: "undefined",
-      appVersionCode: "109",
+      appVersion: "1.0",
+      appVersionCode: "100",
       appLanguage: getAppLanguage(hostLanguage),
       hostVersion: version,
       hostLanguage: hostLanguage,
@@ -19036,7 +19041,7 @@ module.exports = index_cjs;
 
 /***/ }),
 
-/***/ 447:
+/***/ 444:
 /*!*****************************************************************************!*\
   !*** C:/Users/liubo1/Desktop/Demo/demo-web/components/use-qrcode/qrcode.js ***!
   \*****************************************************************************/
@@ -20179,52 +20184,7 @@ function normalizeComponent (
 
 /***/ }),
 
-/***/ 46:
-/*!**************************************************************!*\
-  !*** C:/Users/liubo1/Desktop/Demo/demo-web/common/config.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var config = {
-  debug: !0,
-  version: '1.0.9.230428',
-  route: {
-    home: '/pages/tabbar/home',
-    login: '/pages/login/login',
-    order: '/pages/user/order/order',
-    pay: '/pages/pay/pay',
-    search: '/pages/home/search/search',
-    goods: '/pages/goods/goods',
-    goodslist: '/pages/goods/goods-list'
-  },
-  provider: '',
-  provider_names: {
-    'weixin': '微信',
-    'qq': 'QQ',
-    'alipay': '支付宝',
-    'baidu': '百度',
-    'toutiao': '头条'
-  },
-  const: {
-    __app: '__app',
-    __member: '__member',
-    __access_token: 'USE_ACCESS_TOKEN'
-  }
-};
-var _default = config;
-exports.default = _default;
-
-/***/ }),
-
-/***/ 462:
+/***/ 459:
 /*!*******************************************************************************************************!*\
   !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/utils.js ***!
   \*******************************************************************************************************/
@@ -20442,7 +20402,52 @@ function getImageInfo(img, isH5PathToBase64) {
 
 /***/ }),
 
-/***/ 463:
+/***/ 46:
+/*!**************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/common/config.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var config = {
+  debug: !0,
+  version: '1.0.9.230428',
+  route: {
+    home: '/pages/tabbar/home',
+    login: '/pages/login/login',
+    order: '/pages/user/order/order',
+    pay: '/pages/pay/pay',
+    search: '/pages/home/search/search',
+    goods: '/pages/goods/goods',
+    goodslist: '/pages/goods/goods-list'
+  },
+  provider: '',
+  provider_names: {
+    'weixin': '微信',
+    'qq': 'QQ',
+    'alipay': '支付宝',
+    'baidu': '百度',
+    'toutiao': '头条'
+  },
+  const: {
+    __app: '__app',
+    __member: '__member',
+    __access_token: 'USE_ACCESS_TOKEN'
+  }
+};
+var _default = config;
+exports.default = _default;
+
+/***/ }),
+
+/***/ 460:
 /*!******************************************************************************************************!*\
   !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/draw.js ***!
   \******************************************************************************************************/
@@ -20463,9 +20468,9 @@ var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/run
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ 6));
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 24));
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 25));
-var _utils = __webpack_require__(/*! ./utils */ 462);
-var _gradient = __webpack_require__(/*! ./gradient */ 464);
-var _qrcode = _interopRequireDefault(__webpack_require__(/*! ./qrcode */ 465));
+var _utils = __webpack_require__(/*! ./utils */ 459);
+var _gradient = __webpack_require__(/*! ./gradient */ 461);
+var _qrcode = _interopRequireDefault(__webpack_require__(/*! ./qrcode */ 462));
 function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
@@ -21350,7 +21355,7 @@ exports.Draw = Draw;
 
 /***/ }),
 
-/***/ 464:
+/***/ 461:
 /*!**********************************************************************************************************!*\
   !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/gradient.js ***!
   \**********************************************************************************************************/
@@ -21479,7 +21484,7 @@ function linearEffect(width, height, bg, ctx) {
 
 /***/ }),
 
-/***/ 465:
+/***/ 462:
 /*!********************************************************************************************************!*\
   !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/qrcode.js ***!
   \********************************************************************************************************/
@@ -21490,7 +21495,7 @@ function linearEffect(width, height, bg, ctx) {
 
 /***/ }),
 
-/***/ 466:
+/***/ 463:
 /*!********************************************************************************************************!*\
   !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/layout.js ***!
   \********************************************************************************************************/
@@ -21512,7 +21517,7 @@ var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/run
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 30));
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 24));
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 25));
-var _utils = __webpack_require__(/*! ./utils */ 462);
+var _utils = __webpack_require__(/*! ./utils */ 459);
 var Layout = /*#__PURE__*/function () {
   function Layout() {
     (0, _classCallCheck2.default)(this, Layout);
@@ -22084,7 +22089,7 @@ exports.Layout = Layout;
 
 /***/ }),
 
-/***/ 467:
+/***/ 464:
 /*!********************************************************************************************************!*\
   !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/canvas.js ***!
   \********************************************************************************************************/
@@ -22609,7 +22614,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 473:
+/***/ 470:
 /*!******************************************************************************************!*\
   !*** C:/Users/liubo1/Desktop/Demo/demo-web/components/use-address/city-data/province.js ***!
   \******************************************************************************************/
@@ -22735,7 +22740,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 474:
+/***/ 471:
 /*!**************************************************************************************!*\
   !*** C:/Users/liubo1/Desktop/Demo/demo-web/components/use-address/city-data/city.js ***!
   \**************************************************************************************/
@@ -23860,7 +23865,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 475:
+/***/ 472:
 /*!**************************************************************************************!*\
   !*** C:/Users/liubo1/Desktop/Demo/demo-web/components/use-address/city-data/area.js ***!
   \**************************************************************************************/
@@ -33549,6 +33554,246 @@ var store = new _vuex.default.Store({
 var _default = store;
 exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 4)["default"]))
+
+/***/ }),
+
+/***/ 560:
+/*!************************************************************************!*\
+  !*** ./node_modules/@dcloudio/uni-cli-shared/components/i18n/index.js ***!
+  \************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _en_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./en.json */ 561);
+var _en_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./en.json */ 561, 1);
+/* harmony import */ var _es_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./es.json */ 562);
+var _es_json__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./es.json */ 562, 1);
+/* harmony import */ var _fr_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fr.json */ 563);
+var _fr_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./fr.json */ 563, 1);
+/* harmony import */ var _zh_Hans_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./zh-Hans.json */ 564);
+var _zh_Hans_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./zh-Hans.json */ 564, 1);
+/* harmony import */ var _zh_Hant_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./zh-Hant.json */ 565);
+var _zh_Hant_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./zh-Hant.json */ 565, 1);
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  en: _en_json__WEBPACK_IMPORTED_MODULE_0__,
+  es: _es_json__WEBPACK_IMPORTED_MODULE_1__,
+  fr: _fr_json__WEBPACK_IMPORTED_MODULE_2__,
+  'zh-Hans': _zh_Hans_json__WEBPACK_IMPORTED_MODULE_3__,
+  'zh-Hant': _zh_Hant_json__WEBPACK_IMPORTED_MODULE_4__
+});
+
+
+/***/ }),
+
+/***/ 561:
+/*!***********************************************************************!*\
+  !*** ./node_modules/@dcloudio/uni-cli-shared/components/i18n/en.json ***!
+  \***********************************************************************/
+/*! exports provided: uniCloud.component.add.success, uniCloud.component.update.success, uniCloud.component.remove.showModal.title, uniCloud.component.remove.showModal.content, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uniCloud.component.add.success\":\"Success\",\"uniCloud.component.update.success\":\"Success\",\"uniCloud.component.remove.showModal.title\":\"Tips\",\"uniCloud.component.remove.showModal.content\":\"是否删除该数据\"}");
+
+/***/ }),
+
+/***/ 562:
+/*!***********************************************************************!*\
+  !*** ./node_modules/@dcloudio/uni-cli-shared/components/i18n/es.json ***!
+  \***********************************************************************/
+/*! exports provided: uniCloud.component.add.success, uniCloud.component.update.success, uniCloud.component.remove.showModal.title, uniCloud.component.remove.showModal.content, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uniCloud.component.add.success\":\"新增成功\",\"uniCloud.component.update.success\":\"修改成功\",\"uniCloud.component.remove.showModal.title\":\"提示\",\"uniCloud.component.remove.showModal.content\":\"是否删除该数据\"}");
+
+/***/ }),
+
+/***/ 563:
+/*!***********************************************************************!*\
+  !*** ./node_modules/@dcloudio/uni-cli-shared/components/i18n/fr.json ***!
+  \***********************************************************************/
+/*! exports provided: uniCloud.component.add.success, uniCloud.component.update.success, uniCloud.component.remove.showModal.title, uniCloud.component.remove.showModal.content, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uniCloud.component.add.success\":\"新增成功\",\"uniCloud.component.update.success\":\"修改成功\",\"uniCloud.component.remove.showModal.title\":\"提示\",\"uniCloud.component.remove.showModal.content\":\"是否删除该数据\"}");
+
+/***/ }),
+
+/***/ 564:
+/*!****************************************************************************!*\
+  !*** ./node_modules/@dcloudio/uni-cli-shared/components/i18n/zh-Hans.json ***!
+  \****************************************************************************/
+/*! exports provided: uniCloud.component.add.success, uniCloud.component.update.success, uniCloud.component.remove.showModal.title, uniCloud.component.remove.showModal.content, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uniCloud.component.add.success\":\"新增成功\",\"uniCloud.component.update.success\":\"修改成功\",\"uniCloud.component.remove.showModal.title\":\"提示\",\"uniCloud.component.remove.showModal.content\":\"是否删除该数据\"}");
+
+/***/ }),
+
+/***/ 565:
+/*!****************************************************************************!*\
+  !*** ./node_modules/@dcloudio/uni-cli-shared/components/i18n/zh-Hant.json ***!
+  \****************************************************************************/
+/*! exports provided: uniCloud.component.add.success, uniCloud.component.update.success, uniCloud.component.remove.showModal.title, uniCloud.component.remove.showModal.content, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uniCloud.component.add.success\":\"新增成功\",\"uniCloud.component.update.success\":\"修改成功\",\"uniCloud.component.remove.showModal.title\":\"提示\",\"uniCloud.component.remove.showModal.content\":\"是否刪除數據\"}");
+
+/***/ }),
+
+/***/ 592:
+/*!*************************************************************************************************!*\
+  !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/uni-icons/components/uni-icons/icons.js ***!
+  \*************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  "pulldown": "\uE588",
+  "refreshempty": "\uE461",
+  "back": "\uE471",
+  "forward": "\uE470",
+  "more": "\uE507",
+  "more-filled": "\uE537",
+  "scan": "\uE612",
+  "qq": "\uE264",
+  "weibo": "\uE260",
+  "weixin": "\uE261",
+  "pengyouquan": "\uE262",
+  "loop": "\uE565",
+  "refresh": "\uE407",
+  "refresh-filled": "\uE437",
+  "arrowthindown": "\uE585",
+  "arrowthinleft": "\uE586",
+  "arrowthinright": "\uE587",
+  "arrowthinup": "\uE584",
+  "undo-filled": "\uE7D6",
+  "undo": "\uE406",
+  "redo": "\uE405",
+  "redo-filled": "\uE7D9",
+  "bars": "\uE563",
+  "chatboxes": "\uE203",
+  "camera": "\uE301",
+  "chatboxes-filled": "\uE233",
+  "camera-filled": "\uE7EF",
+  "cart-filled": "\uE7F4",
+  "cart": "\uE7F5",
+  "checkbox-filled": "\uE442",
+  "checkbox": "\uE7FA",
+  "arrowleft": "\uE582",
+  "arrowdown": "\uE581",
+  "arrowright": "\uE583",
+  "smallcircle-filled": "\uE801",
+  "arrowup": "\uE580",
+  "circle": "\uE411",
+  "eye-filled": "\uE568",
+  "eye-slash-filled": "\uE822",
+  "eye-slash": "\uE823",
+  "eye": "\uE824",
+  "flag-filled": "\uE825",
+  "flag": "\uE508",
+  "gear-filled": "\uE532",
+  "reload": "\uE462",
+  "gear": "\uE502",
+  "hand-thumbsdown-filled": "\uE83B",
+  "hand-thumbsdown": "\uE83C",
+  "hand-thumbsup-filled": "\uE83D",
+  "heart-filled": "\uE83E",
+  "hand-thumbsup": "\uE83F",
+  "heart": "\uE840",
+  "home": "\uE500",
+  "info": "\uE504",
+  "home-filled": "\uE530",
+  "info-filled": "\uE534",
+  "circle-filled": "\uE441",
+  "chat-filled": "\uE847",
+  "chat": "\uE263",
+  "mail-open-filled": "\uE84D",
+  "email-filled": "\uE231",
+  "mail-open": "\uE84E",
+  "email": "\uE201",
+  "checkmarkempty": "\uE472",
+  "list": "\uE562",
+  "locked-filled": "\uE856",
+  "locked": "\uE506",
+  "map-filled": "\uE85C",
+  "map-pin": "\uE85E",
+  "map-pin-ellipse": "\uE864",
+  "map": "\uE364",
+  "minus-filled": "\uE440",
+  "mic-filled": "\uE332",
+  "minus": "\uE410",
+  "micoff": "\uE360",
+  "mic": "\uE302",
+  "clear": "\uE434",
+  "smallcircle": "\uE868",
+  "close": "\uE404",
+  "closeempty": "\uE460",
+  "paperclip": "\uE567",
+  "paperplane": "\uE503",
+  "paperplane-filled": "\uE86E",
+  "person-filled": "\uE131",
+  "contact-filled": "\uE130",
+  "person": "\uE101",
+  "contact": "\uE100",
+  "images-filled": "\uE87A",
+  "phone": "\uE200",
+  "images": "\uE87B",
+  "image": "\uE363",
+  "image-filled": "\uE877",
+  "location-filled": "\uE333",
+  "location": "\uE303",
+  "plus-filled": "\uE439",
+  "plus": "\uE409",
+  "plusempty": "\uE468",
+  "help-filled": "\uE535",
+  "help": "\uE505",
+  "navigate-filled": "\uE884",
+  "navigate": "\uE501",
+  "mic-slash-filled": "\uE892",
+  "search": "\uE466",
+  "settings": "\uE560",
+  "sound": "\uE590",
+  "sound-filled": "\uE8A1",
+  "spinner-cycle": "\uE465",
+  "download-filled": "\uE8A4",
+  "personadd-filled": "\uE132",
+  "videocam-filled": "\uE8AF",
+  "personadd": "\uE102",
+  "upload": "\uE402",
+  "upload-filled": "\uE8B1",
+  "starhalf": "\uE463",
+  "star-filled": "\uE438",
+  "star": "\uE408",
+  "trash": "\uE401",
+  "phone-filled": "\uE230",
+  "compose": "\uE400",
+  "videocam": "\uE300",
+  "trash-filled": "\uE8DC",
+  "download": "\uE403",
+  "chatbubble-filled": "\uE232",
+  "chatbubble": "\uE202",
+  "cloud-download": "\uE8E4",
+  "cloud-upload-filled": "\uE8E5",
+  "cloud-upload": "\uE8E6",
+  "cloud-download-filled": "\uE8E9",
+  "headphones": "\uE8BF",
+  "shop": "\uE609"
+};
+exports.default = _default;
 
 /***/ }),
 
