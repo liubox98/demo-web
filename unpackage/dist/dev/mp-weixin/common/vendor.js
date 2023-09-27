@@ -103,9 +103,9 @@ module.exports = _defineProperty, module.exports.__esModule = true, module.expor
 /***/ }),
 
 /***/ 121:
-/*!**************************************************************!*\
-  !*** C:/Users/liubo1/Desktop/Demo/demo-web/common/poster.js ***!
-  \**************************************************************/
+/*!************************************!*\
+  !*** D:/demo-web/common/poster.js ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -907,15 +907,14 @@ var b = "development" === "development",
   A = S({
     "address": [
         "127.0.0.1",
-        "172.21.192.1",
-        "10.10.20.11"
+        "10.10.20.24"
     ],
-    "debugPort": 9001,
+    "debugPort": 9000,
     "initialLaunchType": "remote",
-    "servePort": 7001,
+    "servePort": 7000,
     "skipFiles": [
         "<node_internals>/**",
-        "D:/HBuilderX/plugins/unicloud/**/*.js"
+        "C:/Users/liubo1/HBuilderX/plugins/unicloud/**/*.js"
     ]
 }
 ),
@@ -13959,7 +13958,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniCloud多功能平台","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniCloud多功能平台","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -13980,14 +13979,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniCloud多功能平台","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniCloud多功能平台","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniCloud多功能平台","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniCloud多功能平台","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -14083,7 +14082,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniCloud多功能平台","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniCloud多功能平台","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -15049,9 +15048,9 @@ module.exports = _isNativeFunction, module.exports.__esModule = true, module.exp
 /***/ }),
 
 /***/ 36:
-/*!*************************************************************************************!*\
-  !*** C:/Users/liubo1/Desktop/Demo/demo-web/pages.json?{"type":"origin-pages-json"} ***!
-  \*************************************************************************************/
+/*!***********************************************************!*\
+  !*** D:/demo-web/pages.json?{"type":"origin-pages-json"} ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15271,7 +15270,7 @@ var _default = {
       "enablePullDownRefresh": false
     }
   }, {
-    "path": "pages/tabbar/data_query",
+    "path": "pages/tabbar/data",
     "style": {
       "navigationBarTitleText": "资料查询",
       "enablePullDownRefresh": false
@@ -15286,12 +15285,6 @@ var _default = {
     "path": "pages/user/post/post",
     "style": {
       "navigationBarTitleText": "我发表的",
-      "enablePullDownRefresh": false
-    }
-  }, {
-    "path": "pages/tabbar/abc",
-    "style": {
-      "navigationBarTitleText": "abc",
       "enablePullDownRefresh": false
     }
   }],
@@ -15314,7 +15307,7 @@ var _default = {
       "iconPath": "static/images/tabbar/home.png",
       "selectedIconPath": "static/images/tabbar/home-active.png"
     }, {
-      "pagePath": "pages/tabbar/data_query",
+      "pagePath": "pages/tabbar/data",
       "iconPath": "static/images/tabbar/category.png",
       "selectedIconPath": "static/images/tabbar/category-active.png"
     }, {
@@ -15345,9 +15338,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 37:
-/*!************************************************************************!*\
-  !*** C:/Users/liubo1/Desktop/Demo/demo-web/pages.json?{"type":"stat"} ***!
-  \************************************************************************/
+/*!**********************************************!*\
+  !*** D:/demo-web/pages.json?{"type":"stat"} ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15366,9 +15359,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 38:
-/*!********************************************************!*\
-  !*** C:/Users/liubo1/Desktop/Demo/demo-web/pages.json ***!
-  \********************************************************/
+/*!******************************!*\
+  !*** D:/demo-web/pages.json ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -16890,7 +16883,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniCloud多功能平台","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniCloud多功能平台","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -19041,10 +19034,10 @@ module.exports = index_cjs;
 
 /***/ }),
 
-/***/ 444:
-/*!*****************************************************************************!*\
-  !*** C:/Users/liubo1/Desktop/Demo/demo-web/components/use-qrcode/qrcode.js ***!
-  \*****************************************************************************/
+/***/ 436:
+/*!***************************************************!*\
+  !*** D:/demo-web/components/use-qrcode/qrcode.js ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20184,10 +20177,10 @@ function normalizeComponent (
 
 /***/ }),
 
-/***/ 459:
-/*!*******************************************************************************************************!*\
-  !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/utils.js ***!
-  \*******************************************************************************************************/
+/***/ 451:
+/*!*****************************************************************************!*\
+  !*** D:/demo-web/uni_modules/lime-painter/components/lime-painter/utils.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20402,55 +20395,10 @@ function getImageInfo(img, isH5PathToBase64) {
 
 /***/ }),
 
-/***/ 46:
-/*!**************************************************************!*\
-  !*** C:/Users/liubo1/Desktop/Demo/demo-web/common/config.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var config = {
-  debug: !0,
-  version: '1.0.9.230428',
-  route: {
-    home: '/pages/tabbar/home',
-    login: '/pages/login/login',
-    order: '/pages/user/order/order',
-    pay: '/pages/pay/pay',
-    search: '/pages/home/search/search',
-    goods: '/pages/goods/goods',
-    goodslist: '/pages/goods/goods-list'
-  },
-  provider: '',
-  provider_names: {
-    'weixin': '微信',
-    'qq': 'QQ',
-    'alipay': '支付宝',
-    'baidu': '百度',
-    'toutiao': '头条'
-  },
-  const: {
-    __app: '__app',
-    __member: '__member',
-    __access_token: 'USE_ACCESS_TOKEN'
-  }
-};
-var _default = config;
-exports.default = _default;
-
-/***/ }),
-
-/***/ 460:
-/*!******************************************************************************************************!*\
-  !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/draw.js ***!
-  \******************************************************************************************************/
+/***/ 452:
+/*!****************************************************************************!*\
+  !*** D:/demo-web/uni_modules/lime-painter/components/lime-painter/draw.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20468,9 +20416,9 @@ var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/run
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ 6));
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 24));
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 25));
-var _utils = __webpack_require__(/*! ./utils */ 459);
-var _gradient = __webpack_require__(/*! ./gradient */ 461);
-var _qrcode = _interopRequireDefault(__webpack_require__(/*! ./qrcode */ 462));
+var _utils = __webpack_require__(/*! ./utils */ 451);
+var _gradient = __webpack_require__(/*! ./gradient */ 453);
+var _qrcode = _interopRequireDefault(__webpack_require__(/*! ./qrcode */ 454));
 function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
@@ -21355,10 +21303,10 @@ exports.Draw = Draw;
 
 /***/ }),
 
-/***/ 461:
-/*!**********************************************************************************************************!*\
-  !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/gradient.js ***!
-  \**********************************************************************************************************/
+/***/ 453:
+/*!********************************************************************************!*\
+  !*** D:/demo-web/uni_modules/lime-painter/components/lime-painter/gradient.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21484,10 +21432,10 @@ function linearEffect(width, height, bg, ctx) {
 
 /***/ }),
 
-/***/ 462:
-/*!********************************************************************************************************!*\
-  !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/qrcode.js ***!
-  \********************************************************************************************************/
+/***/ 454:
+/*!******************************************************************************!*\
+  !*** D:/demo-web/uni_modules/lime-painter/components/lime-painter/qrcode.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -21495,10 +21443,10 @@ function linearEffect(width, height, bg, ctx) {
 
 /***/ }),
 
-/***/ 463:
-/*!********************************************************************************************************!*\
-  !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/layout.js ***!
-  \********************************************************************************************************/
+/***/ 455:
+/*!******************************************************************************!*\
+  !*** D:/demo-web/uni_modules/lime-painter/components/lime-painter/layout.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21517,7 +21465,7 @@ var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/run
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 30));
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 24));
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 25));
-var _utils = __webpack_require__(/*! ./utils */ 459);
+var _utils = __webpack_require__(/*! ./utils */ 451);
 var Layout = /*#__PURE__*/function () {
   function Layout() {
     (0, _classCallCheck2.default)(this, Layout);
@@ -22089,10 +22037,10 @@ exports.Layout = Layout;
 
 /***/ }),
 
-/***/ 464:
-/*!********************************************************************************************************!*\
-  !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/lime-painter/components/lime-painter/canvas.js ***!
-  \********************************************************************************************************/
+/***/ 456:
+/*!******************************************************************************!*\
+  !*** D:/demo-web/uni_modules/lime-painter/components/lime-painter/canvas.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22169,10 +22117,181 @@ function adaptor(ctx) {
 
 /***/ }),
 
+/***/ 46:
+/*!************************************!*\
+  !*** D:/demo-web/common/config.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var config = {
+  debug: !0,
+  version: '1.0.9.230428',
+  route: {
+    home: '/pages/tabbar/home',
+    login: '/pages/login/login',
+    order: '/pages/user/order/order',
+    pay: '/pages/pay/pay',
+    search: '/pages/home/search/search',
+    goods: '/pages/goods/goods',
+    goodslist: '/pages/goods/goods-list'
+  },
+  provider: '',
+  provider_names: {
+    'weixin': '微信',
+    'qq': 'QQ',
+    'alipay': '支付宝',
+    'baidu': '百度',
+    'toutiao': '头条'
+  },
+  const: {
+    __app: '__app',
+    __member: '__member',
+    __access_token: 'USE_ACCESS_TOKEN'
+  }
+};
+var _default = config;
+exports.default = _default;
+
+/***/ }),
+
+/***/ 469:
+/*!****************************************************************!*\
+  !*** D:/demo-web/components/use-address/city-data/province.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+/* eslint-disable */
+var provinceData = [{
+  "label": "北京市",
+  "value": "11"
+}, {
+  "label": "天津市",
+  "value": "12"
+}, {
+  "label": "河北省",
+  "value": "13"
+}, {
+  "label": "山西省",
+  "value": "14"
+}, {
+  "label": "内蒙古自治区",
+  "value": "15"
+}, {
+  "label": "辽宁省",
+  "value": "21"
+}, {
+  "label": "吉林省",
+  "value": "22"
+}, {
+  "label": "黑龙江省",
+  "value": "23"
+}, {
+  "label": "上海市",
+  "value": "31"
+}, {
+  "label": "江苏省",
+  "value": "32"
+}, {
+  "label": "浙江省",
+  "value": "33"
+}, {
+  "label": "安徽省",
+  "value": "34"
+}, {
+  "label": "福建省",
+  "value": "35"
+}, {
+  "label": "江西省",
+  "value": "36"
+}, {
+  "label": "山东省",
+  "value": "37"
+}, {
+  "label": "河南省",
+  "value": "41"
+}, {
+  "label": "湖北省",
+  "value": "42"
+}, {
+  "label": "湖南省",
+  "value": "43"
+}, {
+  "label": "广东省",
+  "value": "44"
+}, {
+  "label": "广西壮族自治区",
+  "value": "45"
+}, {
+  "label": "海南省",
+  "value": "46"
+}, {
+  "label": "重庆市",
+  "value": "50"
+}, {
+  "label": "四川省",
+  "value": "51"
+}, {
+  "label": "贵州省",
+  "value": "52"
+}, {
+  "label": "云南省",
+  "value": "53"
+}, {
+  "label": "西藏自治区",
+  "value": "54"
+}, {
+  "label": "陕西省",
+  "value": "61"
+}, {
+  "label": "甘肃省",
+  "value": "62"
+}, {
+  "label": "青海省",
+  "value": "63"
+}, {
+  "label": "宁夏回族自治区",
+  "value": "64"
+}, {
+  "label": "新疆维吾尔自治区",
+  "value": "65"
+}, {
+  "label": "台湾",
+  "value": "66"
+}, {
+  "label": "香港",
+  "value": "67"
+}, {
+  "label": "澳门",
+  "value": "68"
+}, {
+  "label": "钓鱼岛",
+  "value": "69"
+}];
+var _default = provinceData;
+exports.default = _default;
+
+/***/ }),
+
 /***/ 47:
-/*!**************************************************************!*\
-  !*** C:/Users/liubo1/Desktop/Demo/demo-web/common/common.js ***!
-  \**************************************************************/
+/*!************************************!*\
+  !*** D:/demo-web/common/common.js ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22615,135 +22734,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 470:
-/*!******************************************************************************************!*\
-  !*** C:/Users/liubo1/Desktop/Demo/demo-web/components/use-address/city-data/province.js ***!
-  \******************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-/* eslint-disable */
-var provinceData = [{
-  "label": "北京市",
-  "value": "11"
-}, {
-  "label": "天津市",
-  "value": "12"
-}, {
-  "label": "河北省",
-  "value": "13"
-}, {
-  "label": "山西省",
-  "value": "14"
-}, {
-  "label": "内蒙古自治区",
-  "value": "15"
-}, {
-  "label": "辽宁省",
-  "value": "21"
-}, {
-  "label": "吉林省",
-  "value": "22"
-}, {
-  "label": "黑龙江省",
-  "value": "23"
-}, {
-  "label": "上海市",
-  "value": "31"
-}, {
-  "label": "江苏省",
-  "value": "32"
-}, {
-  "label": "浙江省",
-  "value": "33"
-}, {
-  "label": "安徽省",
-  "value": "34"
-}, {
-  "label": "福建省",
-  "value": "35"
-}, {
-  "label": "江西省",
-  "value": "36"
-}, {
-  "label": "山东省",
-  "value": "37"
-}, {
-  "label": "河南省",
-  "value": "41"
-}, {
-  "label": "湖北省",
-  "value": "42"
-}, {
-  "label": "湖南省",
-  "value": "43"
-}, {
-  "label": "广东省",
-  "value": "44"
-}, {
-  "label": "广西壮族自治区",
-  "value": "45"
-}, {
-  "label": "海南省",
-  "value": "46"
-}, {
-  "label": "重庆市",
-  "value": "50"
-}, {
-  "label": "四川省",
-  "value": "51"
-}, {
-  "label": "贵州省",
-  "value": "52"
-}, {
-  "label": "云南省",
-  "value": "53"
-}, {
-  "label": "西藏自治区",
-  "value": "54"
-}, {
-  "label": "陕西省",
-  "value": "61"
-}, {
-  "label": "甘肃省",
-  "value": "62"
-}, {
-  "label": "青海省",
-  "value": "63"
-}, {
-  "label": "宁夏回族自治区",
-  "value": "64"
-}, {
-  "label": "新疆维吾尔自治区",
-  "value": "65"
-}, {
-  "label": "台湾",
-  "value": "66"
-}, {
-  "label": "香港",
-  "value": "67"
-}, {
-  "label": "澳门",
-  "value": "68"
-}, {
-  "label": "钓鱼岛",
-  "value": "69"
-}];
-var _default = provinceData;
-exports.default = _default;
-
-/***/ }),
-
-/***/ 471:
-/*!**************************************************************************************!*\
-  !*** C:/Users/liubo1/Desktop/Demo/demo-web/components/use-address/city-data/city.js ***!
-  \**************************************************************************************/
+/*!************************************************************!*\
+  !*** D:/demo-web/components/use-address/city-data/city.js ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23865,10 +23858,10 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 472:
-/*!**************************************************************************************!*\
-  !*** C:/Users/liubo1/Desktop/Demo/demo-web/components/use-address/city-data/area.js ***!
-  \**************************************************************************************/
+/***/ 471:
+/*!************************************************************!*\
+  !*** D:/demo-web/components/use-address/city-data/area.js ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -32989,9 +32982,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 48:
-/*!**********************************************************!*\
-  !*** C:/Users/liubo1/Desktop/Demo/demo-web/common/db.js ***!
-  \**********************************************************/
+/*!********************************!*\
+  !*** D:/demo-web/common/db.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33345,9 +33338,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 49:
-/*!************************************************************!*\
-  !*** C:/Users/liubo1/Desktop/Demo/demo-web/common/func.js ***!
-  \************************************************************/
+/*!**********************************!*\
+  !*** D:/demo-web/common/func.js ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33443,9 +33436,9 @@ module.exports = _interopRequireDefault, module.exports.__esModule = true, modul
 /***/ }),
 
 /***/ 50:
-/*!*************************************************************!*\
-  !*** C:/Users/liubo1/Desktop/Demo/demo-web/common/store.js ***!
-  \*************************************************************/
+/*!***********************************!*\
+  !*** D:/demo-web/common/store.js ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33554,246 +33547,6 @@ var store = new _vuex.default.Store({
 var _default = store;
 exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 4)["default"]))
-
-/***/ }),
-
-/***/ 560:
-/*!************************************************************************!*\
-  !*** ./node_modules/@dcloudio/uni-cli-shared/components/i18n/index.js ***!
-  \************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _en_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./en.json */ 561);
-var _en_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./en.json */ 561, 1);
-/* harmony import */ var _es_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./es.json */ 562);
-var _es_json__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./es.json */ 562, 1);
-/* harmony import */ var _fr_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fr.json */ 563);
-var _fr_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./fr.json */ 563, 1);
-/* harmony import */ var _zh_Hans_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./zh-Hans.json */ 564);
-var _zh_Hans_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./zh-Hans.json */ 564, 1);
-/* harmony import */ var _zh_Hant_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./zh-Hant.json */ 565);
-var _zh_Hant_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./zh-Hant.json */ 565, 1);
-
-
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  en: _en_json__WEBPACK_IMPORTED_MODULE_0__,
-  es: _es_json__WEBPACK_IMPORTED_MODULE_1__,
-  fr: _fr_json__WEBPACK_IMPORTED_MODULE_2__,
-  'zh-Hans': _zh_Hans_json__WEBPACK_IMPORTED_MODULE_3__,
-  'zh-Hant': _zh_Hant_json__WEBPACK_IMPORTED_MODULE_4__
-});
-
-
-/***/ }),
-
-/***/ 561:
-/*!***********************************************************************!*\
-  !*** ./node_modules/@dcloudio/uni-cli-shared/components/i18n/en.json ***!
-  \***********************************************************************/
-/*! exports provided: uniCloud.component.add.success, uniCloud.component.update.success, uniCloud.component.remove.showModal.title, uniCloud.component.remove.showModal.content, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"uniCloud.component.add.success\":\"Success\",\"uniCloud.component.update.success\":\"Success\",\"uniCloud.component.remove.showModal.title\":\"Tips\",\"uniCloud.component.remove.showModal.content\":\"是否删除该数据\"}");
-
-/***/ }),
-
-/***/ 562:
-/*!***********************************************************************!*\
-  !*** ./node_modules/@dcloudio/uni-cli-shared/components/i18n/es.json ***!
-  \***********************************************************************/
-/*! exports provided: uniCloud.component.add.success, uniCloud.component.update.success, uniCloud.component.remove.showModal.title, uniCloud.component.remove.showModal.content, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"uniCloud.component.add.success\":\"新增成功\",\"uniCloud.component.update.success\":\"修改成功\",\"uniCloud.component.remove.showModal.title\":\"提示\",\"uniCloud.component.remove.showModal.content\":\"是否删除该数据\"}");
-
-/***/ }),
-
-/***/ 563:
-/*!***********************************************************************!*\
-  !*** ./node_modules/@dcloudio/uni-cli-shared/components/i18n/fr.json ***!
-  \***********************************************************************/
-/*! exports provided: uniCloud.component.add.success, uniCloud.component.update.success, uniCloud.component.remove.showModal.title, uniCloud.component.remove.showModal.content, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"uniCloud.component.add.success\":\"新增成功\",\"uniCloud.component.update.success\":\"修改成功\",\"uniCloud.component.remove.showModal.title\":\"提示\",\"uniCloud.component.remove.showModal.content\":\"是否删除该数据\"}");
-
-/***/ }),
-
-/***/ 564:
-/*!****************************************************************************!*\
-  !*** ./node_modules/@dcloudio/uni-cli-shared/components/i18n/zh-Hans.json ***!
-  \****************************************************************************/
-/*! exports provided: uniCloud.component.add.success, uniCloud.component.update.success, uniCloud.component.remove.showModal.title, uniCloud.component.remove.showModal.content, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"uniCloud.component.add.success\":\"新增成功\",\"uniCloud.component.update.success\":\"修改成功\",\"uniCloud.component.remove.showModal.title\":\"提示\",\"uniCloud.component.remove.showModal.content\":\"是否删除该数据\"}");
-
-/***/ }),
-
-/***/ 565:
-/*!****************************************************************************!*\
-  !*** ./node_modules/@dcloudio/uni-cli-shared/components/i18n/zh-Hant.json ***!
-  \****************************************************************************/
-/*! exports provided: uniCloud.component.add.success, uniCloud.component.update.success, uniCloud.component.remove.showModal.title, uniCloud.component.remove.showModal.content, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"uniCloud.component.add.success\":\"新增成功\",\"uniCloud.component.update.success\":\"修改成功\",\"uniCloud.component.remove.showModal.title\":\"提示\",\"uniCloud.component.remove.showModal.content\":\"是否刪除數據\"}");
-
-/***/ }),
-
-/***/ 592:
-/*!*************************************************************************************************!*\
-  !*** C:/Users/liubo1/Desktop/Demo/demo-web/uni_modules/uni-icons/components/uni-icons/icons.js ***!
-  \*************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  "pulldown": "\uE588",
-  "refreshempty": "\uE461",
-  "back": "\uE471",
-  "forward": "\uE470",
-  "more": "\uE507",
-  "more-filled": "\uE537",
-  "scan": "\uE612",
-  "qq": "\uE264",
-  "weibo": "\uE260",
-  "weixin": "\uE261",
-  "pengyouquan": "\uE262",
-  "loop": "\uE565",
-  "refresh": "\uE407",
-  "refresh-filled": "\uE437",
-  "arrowthindown": "\uE585",
-  "arrowthinleft": "\uE586",
-  "arrowthinright": "\uE587",
-  "arrowthinup": "\uE584",
-  "undo-filled": "\uE7D6",
-  "undo": "\uE406",
-  "redo": "\uE405",
-  "redo-filled": "\uE7D9",
-  "bars": "\uE563",
-  "chatboxes": "\uE203",
-  "camera": "\uE301",
-  "chatboxes-filled": "\uE233",
-  "camera-filled": "\uE7EF",
-  "cart-filled": "\uE7F4",
-  "cart": "\uE7F5",
-  "checkbox-filled": "\uE442",
-  "checkbox": "\uE7FA",
-  "arrowleft": "\uE582",
-  "arrowdown": "\uE581",
-  "arrowright": "\uE583",
-  "smallcircle-filled": "\uE801",
-  "arrowup": "\uE580",
-  "circle": "\uE411",
-  "eye-filled": "\uE568",
-  "eye-slash-filled": "\uE822",
-  "eye-slash": "\uE823",
-  "eye": "\uE824",
-  "flag-filled": "\uE825",
-  "flag": "\uE508",
-  "gear-filled": "\uE532",
-  "reload": "\uE462",
-  "gear": "\uE502",
-  "hand-thumbsdown-filled": "\uE83B",
-  "hand-thumbsdown": "\uE83C",
-  "hand-thumbsup-filled": "\uE83D",
-  "heart-filled": "\uE83E",
-  "hand-thumbsup": "\uE83F",
-  "heart": "\uE840",
-  "home": "\uE500",
-  "info": "\uE504",
-  "home-filled": "\uE530",
-  "info-filled": "\uE534",
-  "circle-filled": "\uE441",
-  "chat-filled": "\uE847",
-  "chat": "\uE263",
-  "mail-open-filled": "\uE84D",
-  "email-filled": "\uE231",
-  "mail-open": "\uE84E",
-  "email": "\uE201",
-  "checkmarkempty": "\uE472",
-  "list": "\uE562",
-  "locked-filled": "\uE856",
-  "locked": "\uE506",
-  "map-filled": "\uE85C",
-  "map-pin": "\uE85E",
-  "map-pin-ellipse": "\uE864",
-  "map": "\uE364",
-  "minus-filled": "\uE440",
-  "mic-filled": "\uE332",
-  "minus": "\uE410",
-  "micoff": "\uE360",
-  "mic": "\uE302",
-  "clear": "\uE434",
-  "smallcircle": "\uE868",
-  "close": "\uE404",
-  "closeempty": "\uE460",
-  "paperclip": "\uE567",
-  "paperplane": "\uE503",
-  "paperplane-filled": "\uE86E",
-  "person-filled": "\uE131",
-  "contact-filled": "\uE130",
-  "person": "\uE101",
-  "contact": "\uE100",
-  "images-filled": "\uE87A",
-  "phone": "\uE200",
-  "images": "\uE87B",
-  "image": "\uE363",
-  "image-filled": "\uE877",
-  "location-filled": "\uE333",
-  "location": "\uE303",
-  "plus-filled": "\uE439",
-  "plus": "\uE409",
-  "plusempty": "\uE468",
-  "help-filled": "\uE535",
-  "help": "\uE505",
-  "navigate-filled": "\uE884",
-  "navigate": "\uE501",
-  "mic-slash-filled": "\uE892",
-  "search": "\uE466",
-  "settings": "\uE560",
-  "sound": "\uE590",
-  "sound-filled": "\uE8A1",
-  "spinner-cycle": "\uE465",
-  "download-filled": "\uE8A4",
-  "personadd-filled": "\uE132",
-  "videocam-filled": "\uE8AF",
-  "personadd": "\uE102",
-  "upload": "\uE402",
-  "upload-filled": "\uE8B1",
-  "starhalf": "\uE463",
-  "star-filled": "\uE438",
-  "star": "\uE408",
-  "trash": "\uE401",
-  "phone-filled": "\uE230",
-  "compose": "\uE400",
-  "videocam": "\uE300",
-  "trash-filled": "\uE8DC",
-  "download": "\uE403",
-  "chatbubble-filled": "\uE232",
-  "chatbubble": "\uE202",
-  "cloud-download": "\uE8E4",
-  "cloud-upload-filled": "\uE8E5",
-  "cloud-upload": "\uE8E6",
-  "cloud-download-filled": "\uE8E9",
-  "headphones": "\uE8BF",
-  "shop": "\uE609"
-};
-exports.default = _default;
 
 /***/ }),
 

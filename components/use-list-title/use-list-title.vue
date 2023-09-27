@@ -1,15 +1,15 @@
 <template>
-	<view :class="type == 'round' ? 'padding-lr-sm' : ''">
+	<view :class="type === 'round' ? 'padding-lr-sm' : ''">
 		<!-- 列表标题 -->
-		<view class="use-list-title dflex-b padding-lr w-full bg-main" :class="type == 'round' ? 'border-radius' : ''"
+		<view class="use-list-title dflex-b padding-lr w-full bg-main" :class="type === 'round' ? 'border-radius' : ''"
 			@click="goto">
 			<view class="dflex">
-				<view v-if="iconfont && iconfont != ' '" class="iconfont __left margin-right-sm" :class="iconfont"
+				<view v-if="iconfont && iconfont !== ' '" class="iconfont __left margin-right-sm" :class="iconfont"
 					:style="{ color: color }"></view>
-				<text :style="{fontSize: size + 'rpx', fontWeight: fwt }">{{ title }}</text>
+				<text :style="{ fontSize: size + 'rpx', fontWeight: fwt }">{{ title }}</text>
 			</view>
 			<view class="dflex">
-				<text v-if="tip" class="tip margin-right-xs">{{tip}}</text>
+				<text v-if="tip" class="tip margin-right-xs">{{ tip }}</text>
 				<view class="iconfont fs-sm" :class="rightIcon" :style="{ color: rightColor }"></view>
 			</view>
 		</view>
@@ -56,9 +56,6 @@
 				default: '#c0c0c0'
 			}
 		},
-		data() {
-			return {};
-		},
 		methods: {
 			goto() {
 				console.log('goto');
@@ -73,11 +70,9 @@
 <style lang="scss">
 	.use-list-title {
 		height: 100rpx;
-		line-height: 100rpx;
-	}
+		line-height: 80rpx;
 
-	.use-list-title {
-		.__left {
+		&.__left {
 			font-size: $font-lg + 8upx;
 		}
 

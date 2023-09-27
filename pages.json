@@ -209,7 +209,7 @@
 			}
 
 		}, {
-			"path": "pages/tabbar/data_query",
+			"path": "pages/tabbar/data",
 			"style": {
 				"navigationBarTitleText": "资料查询",
 				"enablePullDownRefresh": false
@@ -229,12 +229,6 @@
 				"enablePullDownRefresh": false
 			}
 
-		}, {
-			"path": "pages/tabbar/abc",
-			"style": {
-				"navigationBarTitleText": "abc",
-				"enablePullDownRefresh": false
-			}
 		}
 	],
 	"globalStyle": {
@@ -259,7 +253,7 @@
 				"selectedIconPath": "static/images/tabbar/home-active.png"
 			},
 			{
-				"pagePath": "pages/tabbar/data_query",
+				"pagePath": "pages/tabbar/data",
 				"iconPath": "static/images/tabbar/category.png",
 				"selectedIconPath": "static/images/tabbar/category-active.png"
 			},

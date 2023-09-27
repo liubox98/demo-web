@@ -38,10 +38,9 @@
     "pages/shopping/detail",
     "pages/tabbar/store",
     "pages/tabbar/ticket",
-    "pages/tabbar/data_query",
+    "pages/tabbar/data",
     "pages/user/gongdan/gongdan",
-    "pages/user/post/post",
-    "pages/tabbar/abc"
+    "pages/user/post/post"
   ],
   "subPackages": [],
   "window": {
@@ -62,7 +61,7 @@
         "selectedIconPath": "static/images/tabbar/home-active.png"
       },
       {
-        "pagePath": "pages/tabbar/data_query",
+        "pagePath": "pages/tabbar/data",
         "iconPath": "static/images/tabbar/category.png",
         "selectedIconPath": "static/images/tabbar/category-active.png"
       },

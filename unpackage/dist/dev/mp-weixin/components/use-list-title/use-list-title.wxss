@@ -19,9 +19,9 @@
 /* 文章场景相关 */
 .use-list-title {
   height: 100rpx;
-  line-height: 100rpx;
+  line-height: 80rpx;
 }
-.use-list-title .__left {
+.use-list-title.__left {
   font-size: 40rpx;
 }
 .use-list-title .iconfont {

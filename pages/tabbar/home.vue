@@ -2,6 +2,7 @@
 	<view class="box-sizing-b w-full">
 		<!-- 01. 头部组件 -->
 		<use-header :search-tip="searchTip" :search-auto="searchAuto" @search="search"></use-header>
+
 		<!-- 02. 轮播区 -->
 		<view class="swiper-area pos-r" v-if="swiperDatas && swiperDatas.length > 0">
 			<!-- 轮播组件 -->
@@ -17,35 +18,30 @@
 		</view>
 
 		<!-- 03. 分类区 -->
-		<view class="category-area dflex dflex-wrap-w" v-if="categoryDatas && categoryDatas.length > 0">
-			<view class="category-item dflex dflex-flow-c margin-bottom-sm" v-for="(item, index) in categoryDatas"
-				:key="index" @click="topage(item)">
-				<image class="margin-bottom-xs" lazy-load :src="item.img"></image>
-				<text class="tac clamp">{{ item.name }}</text>
+		<view class="custom-category-area">
+			<!-- 资料按钮，竖着占3行1列，靠左显示 -->
+			<view class="category-item data-button" @click="navigateToPage('data')">
+				<text class="tac clamp"
+					style="color: #0000ff; font-weight: bold; background-color: #f2f2f2; padding: 10rpx; display: block;">资料</text>
+			</view>
+
+			<!-- 新建一个容器包装商城和社区按钮 -->
+			<view class="mall-community-container">
+				<view class="category-item mall-button" @click="navigateToPage('store')">
+					<text class="tac clamp"
+						style="color: #ff6a6c; font-weight: bold; background-color: #f2f2f2; padding: 10rpx; display: block;">商城</text>
+				</view>
+
+				<view class="category-item community-button" @click="navigateToPage('ticket')">
+					<text class="tac clamp"
+						style="color: #009688; font-weight: bold; background-color: #f2f2f2; padding: 10rpx; display: block;">社区</text>
+				</view>
 			</view>
 		</view>
-		<view class="gap"></view>
 
-		<!-- 04. 限时精选 -->
-		<use-list-title title="限时精选" size="32" fwt="600" color="#333" iconfont="icondaishouhuo-" @goto="limit">
-		</use-list-title>
-		<view class="limit-area">
-			<scroll-view class="padding-lr" scroll-x>
-				<view class="dflex padding-bottom">
-					<view class="item margin-right-sm" v-for="(item, index) in goodsLimitDatas" :key="index"
-						@click="togoods(item)">
-						<image class="border-radius-xs" mode="aspectFill" :lazy-load="true" :src="item.img"></image>
-						<text class="title clamp padding-bottom-xs">{{ item.name }}</text>
-						<text class="price">{{ item.price / 100 }}</text><text
-							class="m-price">{{ item.market_price / 100 }}</text>
-					</view>
-				</view>
-			</scroll-view>
-		</view>
-		<view class="gap"></view>
-
-		<!-- 05. 热门推荐 -->
-		<use-hot-goods :datas="goodsHotDatas" autoload="none" title="热门推荐"></use-hot-goods>
+		<!--  04. 自定义内容展示区-->
+		<use-hot-goods :datas="goodsHotDatas" autoload="none" title="热门资料"></use-hot-goods>
+		<use-hot-goods :datas="goodsHotDatas" autoload="none" title="商城热卖"></use-hot-goods>
 
 		<!-- 置顶 -->
 		<use-totop ref="usetop" :style="{ marginBottom: navHeight + 'px' }"></use-totop>
@@ -125,11 +121,9 @@
 			};
 		},
 
-
 		methods: {
 			// 加载数据
 			async loadData(callback) {
-
 				await this.$func.usemall.call('app/mp/home', {
 					rows: 8
 				}).then(res => {
@@ -150,16 +144,14 @@
 						}
 					}
 				});
-
 			},
 			// 搜索回调函数
 			search() {
 				console.log('home search');
 			},
 			goPage(page) {
-				console.log('[商城]使用参数构建URL:', page);
-				console.log(`/pages/tabbar/${page}`);
-				uni.navigateTo({
+				console.log(`/pages/tabbar/${page}`)
+				uni.switchTab({
 					url: `/pages/tabbar/${page}`
 				});
 			},
@@ -180,20 +172,10 @@
 					});
 				}
 			},
-			// 限时精选 -> 商品详情
-			togoods(item) {
-				// 跳转商品详情
-				this.$api.togoods({
-					id: item._id
-				});
-			},
-			// 限时精选
-			limit() {
-				// 跳转商品列表 - 限时精选类目
-				this.$api.togoodslist({
-					limited: 1
-				});
-			},
+			navigateToPage(page) {
+				// 跳转页面
+				this.goPage(page);
+			}
 		},
 		mounted() {
 			// #ifdef H5 || MP-360
@@ -204,7 +186,6 @@
 </script>
 
 <style lang="scss">
-
 	/* 轮播图区 */
 	.swiper-area {
 		.swiper {
@@ -212,33 +193,56 @@
 		}
 	}
 
-	/* 分类区 */
-	.category-area {
-		padding: 60rpx 0 30rpx 0;
+	.category-item {
+		width: calc(50% - 10rpx);
+		/* 每个按钮占用1x2的格子，调整宽度 */
+		background-color: #fff;
+		/* 背景颜色 */
+		border: 1px solid #ddd;
+		/* 边框样式 */
+		border-radius: 8rpx;
+		/* 边框圆角 */
+		padding: 20rpx;
+		/* 格子内边距 */
+		text-align: center;
+		margin-bottom: 20rpx;
+		/* 调整按钮之间的间距 */
 
-		.category-item {
-			font-size: $font-sm + 2upx;
-			color: $font-color-dark;
-			width: 25%;
+		/* 鼠标悬停效果（可选） */
+		&:hover {
+			background-color: #f7f7f7;
 		}
 
-		image {
-			width: 96rpx;
-			height: 96rpx;
+		text {
+			font-size: $font-sm + 2upx;
+			color: $font-color-dark;
 		}
 	}
 
-	/* 限时精选区 */
-	.limit-area {
-		min-height: 240rpx;
+	/* 新的分类区样式 */
+	.custom-category-area {
+		display: flex;
+		justify-content: space-between;
+		padding: 20rpx;
+		/* 调整内边距 */
+	}
 
-		.item {
-			width: 240rpx;
+	/* 新容器样式，商城和社区按钮共享同一列 */
+	.mall-community-container {
+		display: flex;
+		flex-direction: column;
+		/* 垂直方向排列按钮 */
+		width: 50%;
+		/* 设置容器宽度为50% */
+	}
 
-			image {
-				width: 240rpx;
-				height: 240rpx;
-			}
-		}
+	/* 商城按钮和社区按钮样式，横着占1行1列 */
+	.mall-button,
+	.community-button {
+		width: 100%;
+		/* 设置按钮宽度为100% */
+		height: 100rpx;
+		/* 设置按钮高度为500像素 */
+		text-align: right;
 	}
 </style>
